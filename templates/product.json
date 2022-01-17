@@ -1,0 +1,13 @@
+{
+"sections": {
+  "main": {
+  "type": "product-template"
+  },
+  "bottom": {
+    "type": "product-bottom"
+  }
+},
+"order": [
+"main", "bottom"
+]
+}

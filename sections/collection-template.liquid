@@ -1,0 +1,180 @@
+{% paginate collection.products by 30 %}
+    {% if current_tags %}
+        {% capture  current_tag %}
+            {{ current_tags.first|strip }}
+        {% endcapture %}
+        {% for tag in collection.metafields.global %}
+            {% capture  tag_name %}
+                {{ tag | first }}
+            {% endcapture %}
+            {% if current_tag == tag_name %}
+                {% capture  desc_tag %}
+                    {{ tag | last }}
+                {% endcapture %}
+
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    <div class="container">
+        <div class="collection-header">
+            <div class="flex-container flex-between flex-top">
+                <div class="collection-header__left">
+                    <h1 class="page-title">{{ collection.title }}</h1>
+
+                    {% if collection.description != blank %}
+                        <div class="collection-desc mob-visible">
+                            {{ collection.description }}
+                        </div>
+                    {% endif %}
+                    <div class="collection-filters">
+                        <div data-section-id="{{ section.id }}" data-section-type="collection-filters">
+                            {% if section.settings.product_tags_enable and collection.all_tags.size > 0 %}
+                                <div class="collection-sort">
+                                    <label for="SortTags" class="collection-sort__label">{{ 'collections.sorting.title_tags' | t }}</label>
+                                    <div class="collection-sort__select">
+                                        <select name="SortTags" id="SortTags" class="collection-sort__input">
+                                            {% if collection.handle %}
+                                                <option value="/collections/{{ collection.handle }}">{{ 'collections.sorting.all_of_collection' | t }}</option>
+                                            {% elsif collection.current_type %}
+                                                <option value="{{ collection.current_type | url_for_type }}">{{ 'collections.sorting.all_of_collection' | t }}</option>
+                                            {% elsif collection.current_vendor %}
+                                                <option value="{{ collection.current_vendor | url_for_vendor }}">{{ 'collections.sorting.all_of_collection' | t }}</option>
+                                            {% endif %}
+                                            {% for tag in collection.all_tags %}
+                                                <option value="/collections/{% if collection.handle != blank %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handleize }}"{% if current_tags contains tag %} selected="selected"{% endif %}>{{ tag }}</option>
+                                            {% endfor %}
+                                        </select>
+                                        <span class="collection-sort__toggle"></span>
+                                    </div>
+                                </div>
+                            {% endif %}
+                            {% if section.settings.product_sorting_enable %}
+                                <div class="collection-sort">
+                                    <label for="SortBy" class="collection-sort__label">{{ 'collections.sorting.title' | t }}</label>
+                                    <div class="collection-sort__select">
+                                        <select name="SortBy" id="SortBy" data-default-sort="{{ collection.default_sort_by }}" class="collection-sort__input">
+                                            <option value="manual">{{ 'collections.sorting.featured' | t }}</option>
+                                            <option value="best-selling">{{ 'collections.sorting.best_selling' | t }}</option>
+                                            <option value="title-ascending">{{ 'collections.sorting.az' | t }}</option>
+                                            <option value="title-descending">{{ 'collections.sorting.za' | t }}</option>
+                                            <option value="price-ascending">{{ 'collections.sorting.price_ascending' | t }}</option>
+                                            <option value="price-descending">{{ 'collections.sorting.price_descending' | t }}</option>
+                                            <option value="created-descending">{{ 'collections.sorting.date_descending' | t }}</option>
+                                            <option value="created-ascending">{{ 'collections.sorting.date_ascending' | t }}</option>
+                                        </select>
+                                        <span class="collection-sort__toggle"></span>
+                                    </div>
+                                </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-header__right">
+                    {% if collection.description != blank %}
+                        <div class="collection-desc desc-visible">
+                            {{ collection.description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="products-grid  products-grid-collections">
+
+            {% for product in collection.products %}
+                {% include 'product-layout' %}
+            {% endfor %}
+        </div>
+
+        {% if paginate.pages > 1 %}
+            <div class="pagination">
+
+                {% comment %}
+                    {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+                {% endcomment %}
+
+                {% include 'new-pagination' %}
+
+            </div>
+
+        {% endif %}
+
+        {% if current_tags %}
+
+            {%capture  current_tag %}
+                {{current_tags.first|strip}}
+            {% endcapture  %}
+            {% for tag in collection.metafields.global %}
+                {%-capture tag_name-%}
+                    {{tag | first}}
+                {% endcapture  %}
+                {% if current_tag == tag_name  %}
+                    {%-capture desc_tag-%}
+                        {{tag | last}}
+                    {% endcapture  %}
+
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+        <div class="collection-footer flex-container flex-between flex-top">
+            <div class="side flex-container flex-left flex-top">
+
+                <div class="read-more read-more-col">read more</div>
+            </div>
+            <div class="content">
+                {% comment %}{{ collection.metafields.global.collection_text }}{% endcomment %}
+                {% if desc_tag %}
+                    {{desc_tag}}
+                {%else%}
+                    {{ collection.metafields.global.collection-text }}
+                    {{ collection.metafields.global.collection_text }}
+                {%endif%}
+            </div>
+        </div>
+
+        {% comment %}
+            <div class="grid__item medium-up--one-whole section-header__item">
+                {% comment %}{{ collection.metafields.global.collection_text }}{% endcomment %}
+                {% if desc_tag %}
+                    {{ desc_tag }}
+                {% else %}
+                    {{ collection.metafields.global.collection-text }}
+                    {{ collection.metafields.global.collection_text }}
+                {% endif %}
+            </div>
+        {% endcomment %}
+
+        {% comment %} Added by Smit S @Shopify Theme Support |  July 04  2019 {% endcomment %}
+        <div class="grid__item medium-up--one-half section-header__item">
+            <div id="custom_text" class="section-header__subtext rte">
+                {{ settings.add_text }}
+            </div>
+        </div>
+        {% comment %} Ends here |Smit S @Shopify Theme Support |  July 04  2019 {% endcomment %}
+    </div>
+
+{% endpaginate %}
+{% schema %}
+{
+"name": "Collection Template",
+"settings": [
+{
+"type": "checkbox",
+"id": "product_tags_enable",
+"label": "Enable tag filtering",
+"default": true
+},
+{
+"type": "checkbox",
+"id": "product_sorting_enable",
+"label": "Enable sorting",
+"default": true
+},
+{
+"type": "richtext",
+"id": "blog",
+"label": "Music blog"
+}
+]
+}
+{% endschema %}

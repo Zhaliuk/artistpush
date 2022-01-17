@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-template"
+    },
+    "content": {
+      "type": "faq-section_collection"
+    }
+  },
+  "order": [
+    "main",
+    "content"
+  ]
+}

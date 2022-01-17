@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-404-preSEOManager"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

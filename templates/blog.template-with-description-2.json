@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "blog-template-with-description"
+    },
+    "content": {
+      "type": "faq-section_blog"
+    }
+  },
+  "order": [
+    "main",
+    "content"
+  ]
+}
