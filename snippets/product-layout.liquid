@@ -1,0 +1,31 @@
+
+<a href="{{ product.url }}" class="popular-products-layout">
+  <div class="heading flex-container flex-between flex-top">
+    <div class="pct">
+      <img data-src="{{ product.featured_image | img_url: 'x50'  }}" class="lazyload" alt="{{ product.title }}">
+    </div>
+    <div class="buy">
+        <form method="post" action="/cart/add">
+            <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+            <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+            <button class="buy-btn" type="submit"><i class="icon icon-cart"></i><span>Add to cart</span></button>
+        </form>
+    </div>
+  </div>
+  <div class="data flex-container flex-between flex-bottom">
+    <div class="info">
+      {% if product.compare_at_price %}
+        <span class="sale">sale</span>
+      {% endif %}
+      <div class="title">{{ product.title }}</div>
+    </div>
+    <div class="price flex-container flex-right flex-bottom">
+      {% if product.compare_at_price %}
+        <div class="old-price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+        <div class="current-price">{{ product.price | money_without_trailing_zeros }}</div>
+      {% else %}
+        <div class="current-price">{{ product.price | money_without_trailing_zeros  }}</div>
+      {% endif %}
+    </div>
+  </div>
+</a>

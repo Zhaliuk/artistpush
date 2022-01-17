@@ -1,0 +1,128 @@
+<div class="section">
+    <div class="container">
+        <div class="section-heading flex-container flex-between flex-bottom">
+            <h2 class="section-heading__title">{{ section.settings.section-title }}</h2>
+            <div class="section-heading__more"><a href="{{ section.settings.va-url }}"
+                                                  class="btn">{{ section.settings.va-text }}</a></div>
+        </div>
+        {% assign collect = section.blocks %}
+        {% if collect != blank %}
+            <div class="featured-collection-grid">
+                {% for item in collect %}
+                    {% assign collection = collections[item.settings.collection] %}
+                    <a href="{{ collection.url }}" class="collection-layout collection-layout-soc collection-layout-{{ item.settings.icon }}">
+                        <div class="collection-icon">
+                            <i class="icon icon-{{ item.settings.icon }}"></i>
+                        </div>
+                        <div class="title">{{ collection.title }}</div>
+                        <div class="corner"></div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Social promotion",
+  "class": "index-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section title",
+      "id": "section-title"
+    },
+    {
+      "type": "text",
+      "label": "View All button text",
+      "id": "va-text",
+      "default": "View All"
+    },
+    {
+      "type": "url",
+      "label": "View All button link",
+      "id": "va-url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "id": "collection",
+          "type": "collection",
+          "label": "Collection"
+        },
+        {
+          "id": "icon",
+          "type": "select",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "tiktok",
+              "label": "Tik Tok"
+            },
+            {
+              "value": "instagram",
+              "label": "Instagram"
+            },
+            {
+              "value": "twitter",
+              "label": "Twitter"
+            },
+            {
+              "value": "tidal",
+              "label": "Tidal"
+            },
+            {
+              "value": "deezer",
+              "label": "Deezer"
+            },
+            {
+              "value": "facebook",
+              "label": "Facebook"
+            },
+            {
+              "value": "sound-cloud",
+              "label": "Sound-cloud"
+            },
+            {
+              "value": "beatport",
+              "label": "Beatport"
+            },
+            {
+              "value": "mixcloud",
+              "label": "Mixcloud"
+            },
+            {
+              "value": "napster",
+              "label": "Napster"
+            },
+            {
+              "value": "amazon-prime",
+              "label": "Amazon-prime"
+            },
+            {
+              "value": "shazam",
+              "label": "Shazam"
+            },
+            {
+              "value": "youtube",
+              "label": "Youtube"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social promotion",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,24 @@
+<a href="{{ product.url }}" class="popular-products-layout popular-products-layout-sp flex-container flex-between flex-middle">
+    <div class="products-layout__pct flex-container flex-between flex-top">
+        <div class="pct">
+            <img src="{{ product.featured_image | img_url: 'x50' }}" alt="{{ product.title }}">
+        </div>
+    </div>
+    <div class="data">
+        <div class="info">
+            <div class="title">{{ product.title }}</div>
+        </div>
+        <div class="price">
+            {% if product.compare_at_price %}
+                <span class="sale">sale</span>
+                <div class="old-price">{{ product.compare_at_price | money_without_trailing_zeros }}</div>
+                <div class="current-price">{{ product.price | money_without_trailing_zeros }}</div>
+            {% else %}
+                <div class="current-price">{{ product.price | money_without_trailing_zeros }}</div>
+            {% endif %}
+        </div>
+        <div class="rating">
+            <div class="wc_product_review_badge" data-handle="{{ product.handle }}"></div>
+        </div>
+    </div>
+</a>

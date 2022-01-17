@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="shopify-section read-more-text_section">
+        <div class="collection-footer flex-container flex-between flex-top">
+            <div class="side flex-container flex-left flex-top  js-container-toogle-read-more-btn">
+                <div class="read-more  read-more-btn js-toogle-read-more-btn">
+                    {{ section.settings.read_more_title }}
+                </div>
+            </div>
+            <div class="content read_mode_title flex-container flex-center">
+                {{ section.settings.read_more_content }}
+            </div>
+        </div>
+        <div class="read-more-content collection-footer" >
+            <div class="content dropdown-content js-toogle-dropdown-content">
+            <div class="read-more-content_block block">
+            <h3 class="block_title">{{shop.metafields.read_more.title}}</h3>
+            <div class="block_text">{{ shop.metafields.read_more.text}}</div>
+            <div class="block_list">
+                {% assign block_list-img= shop.metafields.read_more_block.block-img %}
+                {% assign block_list-title= shop.metafields.read_more_block.block-title %}
+                {% assign block_list-text=shop.metafields.read_more_block.block-text %}
+                {% assign block_list-size = shop.metafields.read_more_block.block-title | size %}
+                {% assign block_list-size = block_list-size | minus:1 %}
+                {% for i in (0..block_list-size) %}
+                <div class="block_list-item item">
+                    <img class="item-img" src="{{ block_list-img[i] }}" alt="">
+                    <h4 class="item-title">{{ block_list-title[i] }}</h4>
+                    <p class="item-text">{{ block_list-text[i] | strip_html }}</p>
+                </div>
+                {% endfor %}
+            </div>
+            </div>
+            {{shop.metafields.read_more.content}}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+"name": "Read more text",
+"class": "index-section readmore-text-section",
+"settings": [
+{
+"id": "read_more_title",
+"type": "text",
+"label": "Title",
+"default": "Read more"
+},
+{
+"id": "read_more_content",
+"type": "richtext",
+"label": "Content"
+}
+
+],
+"presets": [
+{
+"name": "Read more text",
+"category": "Text"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="contact-page flex-container flex-between flex-top">
+        {% if page.content != blank %}
+            <div class="content">
+                <div class="rte">
+                    {{ page.content }}
+                </div>
+            </div>
+        {% endif %}
+        <div class="contact-form form-vertical">
+            {% form 'contact' %}
+
+                {% if form.posted_successfully? %}
+                    <p class="form-success">
+                        {{ 'contact.form.post_success' | t }}
+                    </p>
+                {% endif %}
+
+                {{ form.errors | default_errors }}
+                        <input type="text" id="ContactFormName" name="contact[name]"
+                               placeholder="{{ 'contact.form.name' | t }}"
+                               value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}">
+                        <input type="email" id="ContactFormEmail" name="contact[email]"
+                               placeholder="{{ 'contact.form.email' | t }}" autocorrect="off" autocapitalize="off"
+                               value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+
+                <input type="tel" id="ContactFormPhone" name="contact[phone]" placeholder="{{ 'contact.form.phone' | t }}"
+                       pattern="[0-9\-]*"
+                       value="{% if form[phone] %}{{ form[phone] }}{% elsif customer %}{{ customer.phone }}{% endif %}">
+                <textarea rows="10" id="ContactFormMessage" name="contact[body]"
+                          placeholder="{{ 'contact.form.message' | t }}">{% if form.body %}{{ form.body }}{% endif %}</textarea>
+
+                <input type="submit" value="{{ 'contact.form.send' | t }}">
+            {% endform %}
+        </div>
+        <div class="contact-page__pct">
+            <img src="{{ 'map.svg' | asset_url }}" alt="">
+        </div>
+    </div>
+
+    {% section 'featured-products-subsection' %}
+</div>

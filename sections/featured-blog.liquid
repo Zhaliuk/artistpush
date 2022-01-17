@@ -1,0 +1,51 @@
+<div class="section section-blog">
+    <div class="container">
+        <div class="blog-wrap">
+            <div class="blog-gradient">
+                <div class="blog-content">
+                    <div class="blog-title">{{ section.settings.section-title }}</div>
+                    <div class="blog-desc">{{ section.settings.section-description }}</div>
+                    <a href="/blogs/{{ section.settings.blog }}" class="blog-rm">Read more</a>
+                </div>
+            </div>
+            <div class="blog-pct">
+                <img data-src="{{ section.settings.image | img_url: '300x' }}" class="lazyload" alt="blog">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Blog",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section title",
+      "id": "section-title"
+    },
+    {
+      "type": "textarea",
+      "label": "Section description",
+      "id": "section-description"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    },
+    {
+      "type": "blog",
+      "label": "Blog",
+      "id": "blog"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog",
+      "category": "Blog"
+    }
+  ]
+}
+{% endschema %}

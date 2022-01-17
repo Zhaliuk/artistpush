@@ -1,0 +1,18 @@
+<a class="articl-item" href="{{ article.url }}">
+    <div class="articl-item-inner">
+        <div class="img-wraper">
+            <img src="{{ article.image | img_url: 'master' }}" alt="">
+        </div>
+        <div class="articl_info">
+
+            <div class="articl_content-date">{{ article.published_at | date: '%B %d, %Y' }}
+                <div class="arrow-wraper">
+                    <div class="line"></div>
+                    <div class="line-arrow first"></div>
+                    <div class="line-arrow second"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="articl-title">{{ article.title }}</div>
+</a>

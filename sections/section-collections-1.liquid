@@ -1,0 +1,76 @@
+<div class="container">
+	<div class="collection-header">
+		<div class="flex-container flex-between flex-top">
+			<div class="collection-header__left">
+				<h1 class="page-title">{{ page.title }}</h1>
+			</div>
+			<div class="collection-header__right">
+				<div class="collection-desc">
+					{{ section.settings.desc }}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% assign products = section.blocks %}
+	{% if products != blank %}
+		<div class="products-grid">
+			{% for item in products %}
+				{% assign product = all_products[item.settings.products] %}
+				{% assign current_variant = product.selected_or_first_available_variant %}
+				{% include 'product-layout' %}
+			{% endfor %}
+		</div>
+	{% endif %}
+  	{% if page.metafields.global.collection_text != blank %}
+      <div id="shopify-section-collection-footer" class="shopify-section">
+        <div class="collection-footer flex-container flex-between flex-top">
+            <div class="side flex-container flex-left flex-top">
+
+                <div class="read-more read-more-col">read more</div>
+            </div>
+            <div class="content">
+              {{ page.metafields.global.collection_text }}
+            </div>
+        </div>
+      </div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+"name": "Collections",
+"class": "index-section",
+"max_blocks": 99,
+"settings": [
+{
+"type": "text",
+"label": "Section title",
+"id": "section-title"
+},
+{
+"type": "richtext",
+"label": "Description",
+"id": "desc"
+}
+],
+"blocks": [
+{
+"type": "product",
+"name": "Products",
+"settings": [
+{
+"id": "products",
+"type": "product",
+"label": "Products"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Collections",
+"category": "Collections"
+}
+]
+}
+{% endschema %}

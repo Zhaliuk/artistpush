@@ -1,0 +1,48 @@
+<div class="container">
+    <h1 class="page-title">{{ 'customer.account.title' | t }}</h1>
+
+    <div class="profile-wrap">
+        <div class="profile-left profile-block">
+            <div class="profile-subtitle">{{ 'customer.orders.title' | t }}</div>
+
+            {% paginate customer.orders by 20 %}
+                {% if customer.orders.size != 0 %}
+                    <div class="profile-orders">
+                        {% for order in customer.orders %}
+                            <div class="order-layout">
+                                <div class="pct"><img src="{{ order.line_items[0].product.images[0].src | img_url: 'x30' }}" alt="{{ order.line_items[0].product.title }}"></div>
+                                <div class="title">
+                                    {% for product in order.line_items %}
+                                        {{ product.title }}
+                                        {% if order.line_items.size > 2 %}
+                                            +
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                                <div class="total">{{ order.total_price | money }}</div>
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                {% else %}
+
+                    <p>{{ 'customer.orders.none' | t }}</p>
+
+                {% endif %}
+                {% if paginate.pages > 1 %}
+                    <div class="pagination">
+                        {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+                    </div>
+                {% endif %}
+            {% endpaginate %}
+        </div>
+
+        <div class="profile-right profile-block">
+            <div class="profile-subtitle">{{ 'customer.account.details' | t }}</div>
+
+            {{ customer.default_address | format_address }}
+
+            <p><a href="/account/addresses">{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})</a></p>
+        </div>
+    </div>
+</div>

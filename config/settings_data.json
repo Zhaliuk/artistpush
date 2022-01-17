@@ -1,0 +1,1205 @@
+{
+  "current": {
+    "color_header_bg": "#151515",
+    "color_header_links": "#fff",
+    "color_body_bg": "#201f1f",
+    "color_content_bg": "#2f2f2f",
+    "color_body_headings": "#a59d9d",
+    "color_body_text": "#aea1a1",
+    "color_button_bg": "#b33f3f",
+    "color_button_text": "#bab4b4",
+    "color_footer_bg": "#151515",
+    "color_footer_text": "#918a8a",
+    "color_hero_text": "#d2d6da",
+    "color_hero_bg": "#151515",
+    "type_accent_family": "Google_Open+Sans_400_sans",
+    "type_accent_bold": false,
+    "type_accent_spacing": true,
+    "type_accent_transform": true,
+    "type_base_family": "Google_Open+Sans_400_sans",
+    "type_base_size": "14px",
+    "type_nav_size": "14px",
+    "type_nav_spacing": false,
+    "type_nav_transform": true,
+    "product_images_padding": true,
+    "product_vendor_enable": false,
+    "add_text": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/ArtistPushMe\/",
+    "social_twitter_link": "https:\/\/twitter.com\/ArtistPushMe",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/artistpushnet\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/artistpush\/",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_soundCloud_link": "https:\/\/soundcloud.com\/artistpush",
+    "social_mixcloud_link": "https:\/\/www.mixcloud.com\/ArtistPush\/",
+    "social_linkedin_link": "https:\/\/www.linkedin.com\/in\/yana-palmer-816253161\/",
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "favicon": "shopify:\/\/shop_images\/FAV.png",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#2f2f2f",
+    "checkout_input_background_color_mode": "transparent",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#2f2f2f",
+    "checkout_heading_font": "Open Sans",
+    "checkout_body_font": "Open Sans",
+    "checkout_accent_color": "#d2d6da",
+    "checkout_button_color": "#b33f3f",
+    "checkout_error_color": "#ff6d6d",
+    "checkout_banner_background_color": "#fff",
+    "checkout_call_to_action_color": "#006eff",
+    "checkout_use_header_image": false,
+    "color_newsletter_input": "#1a1a1a",
+    "sections": {
+      "slideshow": {
+        "type": "slideshow",
+        "settings": {}
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "linklist": {
+            "type": "menu",
+            "settings": {
+              "link_list": "footer"
+            }
+          },
+          "social": {
+            "type": "social",
+            "settings": {
+              "title_enable": true,
+              "title": "",
+              "align": "left"
+            }
+          },
+          "1506596954230": {
+            "type": "newsletter",
+            "settings": {
+              "color_newsletter_input": "#1a1a1a",
+              "color_newsletter_input_text": "#bdbbbb",
+              "title": "SIGN UP",
+              "text": "Personal offers and discounts"
+            }
+          },
+          "1506597152754": {
+            "type": "text",
+            "settings": {
+              "title": "Email us",
+              "text": "<p>artistpushnet@gmail.com<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "linklist",
+          "social",
+          "1506596954230",
+          "1506597152754"
+        ],
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "link_list": "footer",
+          "email": "artistpushnet@gmail.com"
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "logo_max_width": "255",
+          "main_linklist": "main-menu",
+          "promo_bar_enable": false,
+          "promo_bar_text": "Place order (from $10) and get music blog placement for FREE.",
+          "promo_bar_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "collection-filters": {
+        "type": "collection-filters",
+        "settings": {
+          "product_tags_enable": true,
+          "product_sorting_enable": true
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "enable_ajax": true,
+          "stock_enable": false,
+          "social_sharing_products": true,
+          "show_related_products": true,
+          "related_title": "Other fine products",
+          "related_grid_num": "2",
+          "related_grid_row": "1"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_notes_enable": true
+        }
+      },
+      "article-content": {
+        "type": "article-content",
+        "settings": {
+          "social_sharing_blog": true
+        }
+      },
+      "featured-products-subsection": {
+        "type": "featured-products-subsection",
+        "settings": {
+          "collection": "featured-products-1"
+        }
+      },
+      "1599735033059": {
+        "type": "popular-products",
+        "blocks": {
+          "1599735052586": {
+            "type": "product",
+            "settings": {
+              "products": "1k-real-tiktok-followers"
+            }
+          },
+          "3ca42d59-c4ce-470b-9f38-c8fa8ef51be4": {
+            "type": "product",
+            "settings": {
+              "products": "get-real-instagram-followers"
+            }
+          },
+          "70d9d3d3-4574-40b1-8369-2117f744d4db": {
+            "type": "product",
+            "settings": {
+              "products": "organic-soundcloud-promo"
+            }
+          },
+          "1599735076509": {
+            "type": "product",
+            "settings": {
+              "products": "add-track-hip-hop-rap-rnb-spotify-playlist"
+            }
+          },
+          "ad3cfb88-4b0b-407a-9166-30e350751153": {
+            "type": "product",
+            "settings": {
+              "products": "1-hip-hop-blog-post"
+            }
+          },
+          "15b77c6c-6d11-4d91-8ff5-b2a0f1f5aeac": {
+            "type": "product",
+            "settings": {
+              "products": "1k-youtube-views"
+            }
+          }
+        },
+        "block_order": [
+          "1599735052586",
+          "3ca42d59-c4ce-470b-9f38-c8fa8ef51be4",
+          "70d9d3d3-4574-40b1-8369-2117f744d4db",
+          "1599735076509",
+          "ad3cfb88-4b0b-407a-9166-30e350751153",
+          "15b77c6c-6d11-4d91-8ff5-b2a0f1f5aeac"
+        ],
+        "settings": {
+          "section-title": "Popular",
+          "va-text": "View all",
+          "va-url": "shopify:\/\/pages\/popular"
+        }
+      },
+      "1599744230157": {
+        "type": "featured-collections",
+        "blocks": {
+          "8efd75c7-49ac-4022-bcae-c091cbfd74b6": {
+            "type": "collection",
+            "settings": {
+              "collection": "spotify-promotion",
+              "icon": "spotify"
+            }
+          },
+          "32ee1683-cc31-42c3-a928-7ce3c2b95bc4": {
+            "type": "collection",
+            "settings": {
+              "collection": "tidal-promotion",
+              "icon": "tidal"
+            }
+          },
+          "d93bc25c-57f1-456c-b7fc-5bfa36389896": {
+            "type": "collection",
+            "settings": {
+              "collection": "deezer-promotion",
+              "icon": "deezer"
+            }
+          },
+          "1556ff55-f505-46a8-8469-93777eeccdff": {
+            "type": "collection",
+            "settings": {
+              "collection": "amazon-prime-music-promotion",
+              "icon": "amazon-prime"
+            }
+          },
+          "1599744348385": {
+            "type": "collection",
+            "settings": {
+              "collection": "audiomack-promotion",
+              "icon": "triangles"
+            }
+          },
+          "a9e24c10-acd9-4e8e-b97d-d53bd69eeb7a": {
+            "type": "collection",
+            "settings": {
+              "collection": "pandora-promotion",
+              "icon": "playlist"
+            }
+          }
+        },
+        "block_order": [
+          "8efd75c7-49ac-4022-bcae-c091cbfd74b6",
+          "32ee1683-cc31-42c3-a928-7ce3c2b95bc4",
+          "d93bc25c-57f1-456c-b7fc-5bfa36389896",
+          "1556ff55-f505-46a8-8469-93777eeccdff",
+          "1599744348385",
+          "a9e24c10-acd9-4e8e-b97d-d53bd69eeb7a"
+        ],
+        "settings": {
+          "section-title": "Streaming promotion",
+          "va-text": "View All",
+          "va-url": "shopify:\/\/pages\/music-streaming"
+        }
+      },
+      "1599807231225": {
+        "type": "ticker",
+        "blocks": {
+          "1599807244754": {
+            "type": "collection",
+            "settings": {
+              "items": "URGENT! We recently changed our payment system."
+            }
+          },
+          "1599807256965": {
+            "type": "collection",
+            "settings": {
+              "items": "It turned out that due to the new policy, the master card blocks all payments from the USA for social media marketing."
+            }
+          },
+          "1599807258665": {
+            "type": "collection",
+            "settings": {
+              "items": "The only option is to pay with a Visa credit card or we can send PayPal invoice."
+            }
+          },
+          "1599807260308": {
+            "type": "collection",
+            "settings": {
+              "items": "Also you can pay with Transferwise."
+            }
+          },
+          "1599807262588": {
+            "type": "collection",
+            "settings": {
+              "items": "Please, write us >> artistpushnet@gmail.com"
+            }
+          }
+        },
+        "block_order": [
+          "1599807244754",
+          "1599807256965",
+          "1599807258665",
+          "1599807260308",
+          "1599807262588"
+        ],
+        "settings": {}
+      },
+      "1599819890932": {
+        "type": "personal-promotion",
+        "blocks": {
+          "0f89c26e-5d9c-4b57-b588-85d0b5b9967e": {
+            "type": "product",
+            "settings": {
+              "collection": "artist-push",
+              "icon": "promo",
+              "subtitle": ""
+            }
+          },
+          "bafa1821-0b7e-4e2c-8f54-168c102f3026": {
+            "type": "product",
+            "settings": {
+              "collection": "release-push",
+              "icon": "release",
+              "subtitle": ""
+            }
+          },
+          "da8ebfeb-4896-432f-87a6-c1f93c872c4b": {
+            "type": "product",
+            "settings": {
+              "collection": "networks-push",
+              "icon": "smm",
+              "subtitle": ""
+            }
+          },
+          "fb3f8257-cf68-4f83-b16b-d9553ba44428": {
+            "type": "product",
+            "settings": {
+              "collection": "hip-hop-promotion",
+              "icon": "hiphop",
+              "subtitle": ""
+            }
+          },
+          "39f474d6-5e89-4aa1-8b58-64d59135cdc8": {
+            "type": "product",
+            "settings": {
+              "collection": "music-blogs-submission",
+              "icon": "music-blogs",
+              "subtitle": ""
+            }
+          },
+          "783d97fb-13dc-4733-89a9-5feb32b82434": {
+            "type": "product",
+            "settings": {
+              "collection": "resident-advisor-promotion",
+              "icon": "resident",
+              "subtitle": ""
+            }
+          }
+        },
+        "block_order": [
+          "0f89c26e-5d9c-4b57-b588-85d0b5b9967e",
+          "bafa1821-0b7e-4e2c-8f54-168c102f3026",
+          "da8ebfeb-4896-432f-87a6-c1f93c872c4b",
+          "fb3f8257-cf68-4f83-b16b-d9553ba44428",
+          "39f474d6-5e89-4aa1-8b58-64d59135cdc8",
+          "783d97fb-13dc-4733-89a9-5feb32b82434"
+        ],
+        "settings": {
+          "section-title": "Personal promotion",
+          "va-text": "View All",
+          "va-url": "shopify:\/\/pages\/personal-promotion"
+        }
+      },
+      "1599827114990": {
+        "type": "banner",
+        "settings": {
+          "banner-title": "Make music",
+          "banner-subtitle": "Forget promotion"
+        }
+      },
+      "1599828839017": {
+        "type": "reviews",
+        "blocks": {
+          "1599828929625": {
+            "type": "reviews",
+            "settings": {
+              "author": "Andrew Bowie",
+              "activity": "Sound producer",
+              "photo": "shopify:\/\/shop_images\/populyarnyy-popsoket-pop-socket-dlya-parnya-dart-veyder-56860954500598_small11.jpg",
+              "review": "Medias today create even fcking countries, imagine what they'll do with your music. Like overnight I saw myself giving interviews, participating podcasts and writing blogs about my music. Suddenly, I was everywhere. My music as well. Bengies you'll invest in music promotion will doom you to success. Thanks."
+            }
+          },
+          "1599828952437": {
+            "type": "reviews",
+            "settings": {
+              "author": "Alice Glass",
+              "activity": "DJ, sound producer",
+              "photo": "shopify:\/\/shop_images\/5d3a5c4f37f1cf5ec2d6cf1bc4d33227.jpg",
+              "review": "Invest that pays off! A blog posting is the best way to sell your material, music, even tickets for your live performance. I need to praise Artist Push for remarkable work."
+            }
+          },
+          "1599828980200": {
+            "type": "reviews",
+            "settings": {
+              "author": "King Music",
+              "activity": "Label manager",
+              "photo": "shopify:\/\/shop_images\/79045d864599e6963d4f6150fb1bd304.jpg",
+              "review": "As a manager, I have tough everyday routine dealing with music platforms. Artist Push is nerves, energy, and time saver. And in my job time is everything."
+            }
+          }
+        },
+        "block_order": [
+          "1599828929625",
+          "1599828952437",
+          "1599828980200"
+        ],
+        "settings": {
+          "section-title": "Reviews"
+        }
+      },
+      "1599832027734": {
+        "type": "featured-blog",
+        "settings": {
+          "section-title": "Our blog",
+          "section-description": "Steamy-hot music news and insider insights \nfrom the business end of the music grind.",
+          "image": "shopify:\/\/shop_images\/Untitled.png",
+          "blog": "news"
+        }
+      },
+      "collection-footer": {
+        "type": "collection-footer",
+        "settings": {
+          "blog": "<p>The music landscape has undergone some huge changes in the past decade or two. That trend shows no sign of letting up; in fact, it appears as though things are changing exponentially over time.<\/p><p>Artist Push offers a music blog that is intended to keep you in the loop in terms of what the most up-to-date strategies are for getting your music out to the world, building an audience, and so much more.<\/p><p>Whether you are an independent artist, a manager of musicians, a music label, whatever the case may be, you are going to want to keep an eye on this blog.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p>"
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "cl-text": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience.<\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels.<\/p>"
+        }
+      },
+      "section-collections-1": {
+        "type": "section-collections-1",
+        "blocks": {
+          "e8c0bf4c-0649-47f6-ac5f-fb27ec9ffe55": {
+            "type": "product",
+            "settings": {
+              "products": "1-hip-hop-blog-post"
+            }
+          },
+          "4e50b8a9-5cfc-4c90-893a-e4f6c10181f6": {
+            "type": "product",
+            "settings": {
+              "products": "1-million-spotify-plays"
+            }
+          },
+          "eb34fd9b-7dd0-490c-b684-e744b9f6c28c": {
+            "type": "product",
+            "settings": {
+              "products": "1k-apple-music-plays"
+            }
+          },
+          "6a55d245-93d0-41c1-8c56-99ebf4207801": {
+            "type": "product",
+            "settings": {
+              "products": "buy-amazon-music-plays"
+            }
+          },
+          "84bad28c-df10-4e17-8ef7-9728a10c891f": {
+            "type": "product",
+            "settings": {
+              "products": "buy-targeted-youtube-views"
+            }
+          },
+          "fe79a61d-ce56-435b-acc3-ec7318221098": {
+            "type": "product",
+            "settings": {
+              "products": "apple-music-hip-hop-playlist"
+            }
+          },
+          "c6fd1c79-364f-4651-af5f-15cd313a3e3c": {
+            "type": "product",
+            "settings": {
+              "products": "add-track-hip-hop-rap-rnb-spotify-playlist"
+            }
+          },
+          "ad6cc84b-f4fb-4e49-bd10-5e223759b843": {
+            "type": "product",
+            "settings": {
+              "products": "one-million-soundcloud-plays"
+            }
+          },
+          "582dcfe4-c277-4d1d-b673-ce7cc879880a": {
+            "type": "product",
+            "settings": {
+              "products": "basic-release-push"
+            }
+          },
+          "3627ded8-ea2b-4692-8d84-609fd02260f8": {
+            "type": "product",
+            "settings": {
+              "products": "buy-amazon-music-plays"
+            }
+          },
+          "1abbba05-2d86-4e7b-a449-7b21afb352ad": {
+            "type": "product",
+            "settings": {
+              "products": "buy-deezer-plays"
+            }
+          },
+          "1b2480c7-3fb8-47f1-868e-fa0571caa2dc": {
+            "type": "product",
+            "settings": {
+              "products": "1k-tidal-plays"
+            }
+          },
+          "be7b918b-a9e2-4018-9330-e25de084053f": {
+            "type": "product",
+            "settings": {
+              "products": "1-amazon-music-playlist"
+            }
+          },
+          "69a6b5f8-885c-431e-9ded-3ee2d2f0a057": {
+            "type": "product",
+            "settings": {
+              "products": "add-track-to-10-spotify-playlists-stays-4-months"
+            }
+          },
+          "c1ad7cf7-9b10-4d44-9f65-d92977818a47": {
+            "type": "product",
+            "settings": {
+              "products": "buy-apple-music-plays"
+            }
+          }
+        },
+        "block_order": [
+          "e8c0bf4c-0649-47f6-ac5f-fb27ec9ffe55",
+          "4e50b8a9-5cfc-4c90-893a-e4f6c10181f6",
+          "eb34fd9b-7dd0-490c-b684-e744b9f6c28c",
+          "6a55d245-93d0-41c1-8c56-99ebf4207801",
+          "84bad28c-df10-4e17-8ef7-9728a10c891f",
+          "fe79a61d-ce56-435b-acc3-ec7318221098",
+          "c6fd1c79-364f-4651-af5f-15cd313a3e3c",
+          "ad6cc84b-f4fb-4e49-bd10-5e223759b843",
+          "582dcfe4-c277-4d1d-b673-ce7cc879880a",
+          "3627ded8-ea2b-4692-8d84-609fd02260f8",
+          "1abbba05-2d86-4e7b-a449-7b21afb352ad",
+          "1b2480c7-3fb8-47f1-868e-fa0571caa2dc",
+          "be7b918b-a9e2-4018-9330-e25de084053f",
+          "69a6b5f8-885c-431e-9ded-3ee2d2f0a057",
+          "c1ad7cf7-9b10-4d44-9f65-d92977818a47"
+        ],
+        "settings": {
+          "section-title": "Popular",
+          "desc": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience. <\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels. <\/p>"
+        }
+      },
+      "section-collections-2": {
+        "type": "section-collections-2",
+        "blocks": {
+          "5bfcabb0-f7cb-475d-9962-15662408c94f": {
+            "type": "collection",
+            "settings": {
+              "collection": "spotify-promotion",
+              "icon": "spotify"
+            }
+          },
+          "2f905f7b-3aa2-4bcf-bd0e-0158bb5ebd75": {
+            "type": "collection",
+            "settings": {
+              "collection": "amazon-prime-music-promotion",
+              "icon": "artist-logo"
+            }
+          },
+          "93ca8ae5-3f81-4438-9898-4efcce0be09f": {
+            "type": "collection",
+            "settings": {
+              "collection": "deezer-promotion",
+              "icon": "deezer"
+            }
+          },
+          "9d9975d6-5e9b-4677-8e43-86804562b66a": {
+            "type": "collection",
+            "settings": {
+              "collection": "tidal-promotion",
+              "icon": "tidal"
+            }
+          },
+          "6747e81b-3c14-4d85-9920-6f32597d87bd": {
+            "type": "collection",
+            "settings": {
+              "collection": "audiomack-promotion",
+              "icon": "artist-logo"
+            }
+          },
+          "5a469c5d-4e1b-4350-90d8-72fee5f08545": {
+            "type": "collection",
+            "settings": {
+              "collection": "pandora-promotion",
+              "icon": "artist-logo"
+            }
+          },
+          "5b769629-ab4c-4f09-b954-546cce95aa4a": {
+            "type": "collection",
+            "settings": {
+              "collection": "spotify-and-apple-music-playlists-placement",
+              "icon": "playlist"
+            }
+          }
+        },
+        "block_order": [
+          "5bfcabb0-f7cb-475d-9962-15662408c94f",
+          "2f905f7b-3aa2-4bcf-bd0e-0158bb5ebd75",
+          "93ca8ae5-3f81-4438-9898-4efcce0be09f",
+          "9d9975d6-5e9b-4677-8e43-86804562b66a",
+          "6747e81b-3c14-4d85-9920-6f32597d87bd",
+          "5a469c5d-4e1b-4350-90d8-72fee5f08545",
+          "5b769629-ab4c-4f09-b954-546cce95aa4a"
+        ],
+        "settings": {
+          "section-title": "Streaming promotion",
+          "desc": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience. <\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels. <\/p>"
+        }
+      },
+      "section-collections-3": {
+        "type": "section-collections-3",
+        "blocks": {
+          "04bdd6ef-7633-464a-8262-b1c0e57e2630": {
+            "type": "collection",
+            "settings": {
+              "collection": "facebook-promotion",
+              "icon": "facebook"
+            }
+          },
+          "8192417e-00af-4b68-a69c-d92b58492ef2": {
+            "type": "collection",
+            "settings": {
+              "collection": "instagram-promotion",
+              "icon": "instagram"
+            }
+          },
+          "f8b86d20-6191-41d4-8cd1-26f33895f574": {
+            "type": "collection",
+            "settings": {
+              "collection": "tik-tok-promotion",
+              "icon": "tiktok"
+            }
+          },
+          "23b0af3d-5946-4615-83c1-708fd0d70149": {
+            "type": "collection",
+            "settings": {
+              "collection": "youtube-promotion",
+              "icon": "youtube"
+            }
+          },
+          "4e737346-4028-40ba-8bda-d52b2be2b3c2": {
+            "type": "collection",
+            "settings": {
+              "collection": "soundcloud-promotion",
+              "icon": "sound-cloud"
+            }
+          },
+          "2e8693f9-c5db-431a-af82-4846b11a3df7": {
+            "type": "collection",
+            "settings": {
+              "collection": "mixcloud-promotion",
+              "icon": "mixcloud"
+            }
+          }
+        },
+        "block_order": [
+          "04bdd6ef-7633-464a-8262-b1c0e57e2630",
+          "8192417e-00af-4b68-a69c-d92b58492ef2",
+          "f8b86d20-6191-41d4-8cd1-26f33895f574",
+          "23b0af3d-5946-4615-83c1-708fd0d70149",
+          "4e737346-4028-40ba-8bda-d52b2be2b3c2",
+          "2e8693f9-c5db-431a-af82-4846b11a3df7"
+        ],
+        "settings": {
+          "section-title": "Social promotion",
+          "desc": "<p>At Network Push, everything is easy and straightforward; that's why our customers love us all over the world. The Network Push formula is the \"set it once and forget entirely about social promotion\" because you are covered for the month. You only need to budget, choose the network that's most suitable for your music business, and set it on autopilot. We at Network Push will do all the legwork for you from then on till you subscribe again.<\/p>"
+        }
+      },
+      "section-collections-4": {
+        "type": "section-collections-4",
+        "blocks": {
+          "7b20a929-48e2-4c7d-9c6d-6f1848327e0b": {
+            "type": "collection",
+            "settings": {
+              "collection": "artist-push",
+              "icon": "promo"
+            }
+          },
+          "fb6e2b05-fc88-41b0-91ab-55d112a04f2a": {
+            "type": "collection",
+            "settings": {
+              "collection": "release-push",
+              "icon": "release"
+            }
+          },
+          "153efda4-ffc2-4ed9-a312-2a788215b80a": {
+            "type": "collection",
+            "settings": {
+              "collection": "networks-push",
+              "icon": "smm"
+            }
+          },
+          "c6f903ae-ee6c-4b02-b32a-f92f951ac19a": {
+            "type": "collection",
+            "settings": {
+              "collection": "hip-hop-promotion",
+              "icon": "hiphop"
+            }
+          },
+          "4e77eb12-2e38-43a4-9c51-9b553ba8fb02": {
+            "type": "collection",
+            "settings": {
+              "collection": "music-blogs-submission",
+              "icon": "music-blogs"
+            }
+          },
+          "752efbc0-cded-4776-9358-f8a176e23a3e": {
+            "type": "collection",
+            "settings": {
+              "collection": "resident-advisor-promotion",
+              "icon": "resident"
+            }
+          }
+        },
+        "block_order": [
+          "7b20a929-48e2-4c7d-9c6d-6f1848327e0b",
+          "fb6e2b05-fc88-41b0-91ab-55d112a04f2a",
+          "153efda4-ffc2-4ed9-a312-2a788215b80a",
+          "c6f903ae-ee6c-4b02-b32a-f92f951ac19a",
+          "4e77eb12-2e38-43a4-9c51-9b553ba8fb02",
+          "752efbc0-cded-4776-9358-f8a176e23a3e"
+        ],
+        "settings": {
+          "section-title": "Personal promotion for artists",
+          "desc": "<p>Get <strong>monthly music promo packs<\/strong>. Save your time & money. As our name says, push stands for a low kick into your digital presence. In today's music industry art is not \"the thing\" for success. It's all about promoting. With our perfected scent for marketing, and the fact we deliver only real followers to your profiles, and streams, the momentum of viral spread and boost to your digital marketing campaigns is tremendous.<\/p>"
+        }
+      },
+      "16195392156db76d96": {
+        "type": "social-promotion",
+        "blocks": {
+          "1b2e7957-6a16-4c9b-9aa7-be85026e2d3b": {
+            "type": "collection",
+            "settings": {
+              "collection": "facebook-promotion",
+              "icon": "facebook"
+            }
+          },
+          "ab2da833-3af2-406a-9e23-341a8465a3fb": {
+            "type": "collection",
+            "settings": {
+              "collection": "instagram-promotion",
+              "icon": "instagram"
+            }
+          },
+          "1d9c5c74-65ce-49ec-a65b-8db19da2e2d6": {
+            "type": "collection",
+            "settings": {
+              "collection": "tik-tok-promotion",
+              "icon": "tiktok"
+            }
+          },
+          "ee843a5e-996c-497b-9bfa-d564f0815e3e": {
+            "type": "collection",
+            "settings": {
+              "collection": "youtube-promotion",
+              "icon": "youtube"
+            }
+          },
+          "7b8926ea-9020-47d2-95d2-27e6c468a140": {
+            "type": "collection",
+            "settings": {
+              "collection": "soundcloud-promotion",
+              "icon": "sound-cloud"
+            }
+          },
+          "54be03af-0361-475d-b26c-8afeede928af": {
+            "type": "collection",
+            "settings": {
+              "collection": "mixcloud-promotion",
+              "icon": "mixcloud"
+            }
+          }
+        },
+        "block_order": [
+          "1b2e7957-6a16-4c9b-9aa7-be85026e2d3b",
+          "ab2da833-3af2-406a-9e23-341a8465a3fb",
+          "1d9c5c74-65ce-49ec-a65b-8db19da2e2d6",
+          "ee843a5e-996c-497b-9bfa-d564f0815e3e",
+          "7b8926ea-9020-47d2-95d2-27e6c468a140",
+          "54be03af-0361-475d-b26c-8afeede928af"
+        ],
+        "settings": {
+          "section-title": "Social promotion",
+          "va-text": "View All",
+          "va-url": "https:\/\/artistpush.me\/pages\/social-promotion"
+        }
+      },
+      "faq": {
+        "type": "faq",
+        "blocks": {
+          "737b2ef3-ffec-434a-a9b0-47a0f9403158": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>How does it work?<\/strong><\/em><\/p>",
+              "desc": "<p>After you've placed an order on our website, your data will be added to our database, and the delivery will take place within 1-2 days. However, the delivery length also depends on the package you have chosen for your music promotion. We never ask for your personal information, such as your music streaming accounts' passwords, but please make sure to put the links for which you want a promotion. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "f4497b20-a22f-4f17-9550-d9422409292a": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Do you offer deals and packages?<\/strong><\/em><\/p>",
+              "desc": "<p>We do offer deals for clients who are willing to buy bulk packages. We have different types of packages for various types of releases such as singles, EP, or multi-single. With our package, you'll have the <strong>best way to get music on <\/strong>any music streaming platform like <a href=\"https:\/\/artistpush.me\/collections\/spotify-promotion\" title=\"spotify promotion\">Spotify<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/streaming-promotion\" title=\"Apple Music promotion\">Apple Music<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/deezer-promotion\" title=\"Deezer promotion\">Deezer<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/tidal-promotion\" title=\"Tidal promotion\">Tidal<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/amazon-prime-music-promotion\" title=\"Amazon Music \">Amazon Music<\/a> and others. You also get more services when you reach a higher level as a buyer. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "bbade3b2-aa84-486f-a9c0-14dce56ca329": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>How do I submit links?<\/strong><\/em><\/p>",
+              "desc": "<p> When you fill the form for order placement, you'll come across a section that requires you to fill the links. However, if you're still confused, you can send the links to our email id <strong>artistpushnet@gmail.com<\/strong> along with your order number. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "e1535dd0-227c-43d4-9d9b-e3a814876292": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>When and what should I expect from the services?<\/strong><\/em><\/p>",
+              "desc": "<p> When you place an order on our website, a small portion of the funds is allocated for the promotion campaign. When you place an order, your promotion campaign's processing has started, but it isn't published yet. During the process, our team evaluates your music and makes decisions on the type of audience your music will attract. <\/p><p>When the process is completed, and the preparations are done for your music campaign, we display the results within a week according to the number of services you have placed the order for. We don't wind up the campaign processing quickly because the results won't be up to the mark if we do so. The preparations for the campaign make sure that you get the best results. We always look forward to working in a professional and organized manner that leads to our clients' music careers' growth and success. <\/p><p>It takes around 1 to 3 days for the orders to start, and the process involves pitching your music track, gaining placements, and communicating with the curators. 1 to 3 days is just an estimate, and sometimes this duration may vary according to the order placed. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "5b027fb3-e39b-4fbf-9d76-8950906ff897": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Can I get a refund if I'm not satisfied with the services?<\/strong><\/em><\/p>",
+              "desc": "<p> Our customers' satisfaction matters the most, and we always make sure that our customers are happy and content. If you don't receive the service or desired results, you will get a refund, or we can also switch you to another similar service of your choice. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "1a6dd30f-da91-41ed-9a39-fb86607dd10e": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Are there discounts available?<\/strong><\/em><\/p>",
+              "desc": "<p>There is a 10% discount available if your purchase reaches $150 or exceeds it. Apart from that, we make mailouts too every quarter, for which you'll be notified through the news. <a href=\"https:\/\/artistpush.me\/products\/personal-promotion\" title=\"personal promotion\">Personal promotion pack<\/a> is equipped with in-depth analysis of our account and free consultation too. <\/p>",
+              "chose_faq_block": "first"
+            }
+          },
+          "5c3f9d7d-a44e-4e96-b5af-2cef809fcaa6": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Do you provide real likes and promo services?<\/strong><\/em><\/p>",
+              "desc": "<p>Real users give the likes, and thus, they are real. We use a plethora of sources that comprise real listeners, including <a href=\"https:\/\/artistpush.me\/collections\/spotify-and-apple-music-playlists-placement\" title=\"Playlists placement\">playlist placement<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/music-blogs-submission\" title=\"music blogs\">music blogs placement<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/networks-push\" title=\"socila media marketing\">social media marketing<\/a>, and mailout promotion. No matter what music streaming platform it is, we pitch to the play curators to boost the traffic and listeners to various social media platforms. <\/p><p>After thorough research and utilization of resources, we are able to detect and remove the artificial activities from the music streaming so that the services are 100% real and nothing is fake. Our services' reliability is critical, and we make sure that the streams are honest and the artists get the appreciation they deserve.<\/p>",
+              "chose_faq_block": "second"
+            }
+          },
+          "6dade8cb-f81e-48fc-8fcb-72eef887d8c1": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Will the followers last forever?<\/strong><\/em><\/p>",
+              "desc": "<p>Mostly the followers which you get from our services will stick to your account, but we can't guarantee whether they'll last forever because it totally depends on the followers. <\/p><p>Some followers might un-follow you, and this is what we can't help. We do provide refills for followers within three months, so contact us if you see a drop. <\/p>",
+              "chose_faq_block": "second"
+            }
+          },
+          "8aa99d0a-bbc4-4566-a87f-1deb4a1888cc": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>What information is required for music blog placement?<\/strong><\/em><\/p>",
+              "desc": "<p>For music blog placement, we will need this information:<\/p><p>✔️ The artist bio<\/p><p>✔️ Track or video link for the blog post<\/p><p>✔️ High-resolution cover<\/p><p>✔️ High-quality picture for the blog post<\/p>",
+              "chose_faq_block": "second"
+            }
+          },
+          "e6b49915-6c44-4e40-b126-20e20e98f272": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>How much time does it take for the playlists to be updated, and how long does the song remain on the playlist?<\/strong><\/em><\/p>",
+              "desc": "<p>Our curators require around 1 to 2 days to update the playlists. Please stay in touch so that we keep you informed all the time. One playlist placement is for ten days. Thus the song will remain on the playlist for ten days. However, your song or track can be on the playlist for longer, depending on the quantity ordered. <\/p>",
+              "chose_faq_block": "third"
+            }
+          },
+          "5ab8a787-125a-4b2d-9e24-7a57a1aad46c": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Will you send links to playlists after the completion of the campaign?<\/strong><\/em><\/p>",
+              "desc": "<p>Yes, we will send the links to playlists after we submit your music to playlists and the campaign has been completed. <\/p>",
+              "chose_faq_block": "third"
+            }
+          },
+          "970718ab-b853-43c9-a3a4-b3141d930d4f": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>Do you promote all genres?<\/strong><\/em><\/p>",
+              "desc": "<p>Yes, we promote all genres. We interact with different curators who work on various genres and continuously work on coming up with accurate and active playlists. We also do <a href=\"https:\/\/artistpush.me\/collections\/hip-hop-promotion\" title=\"hip hop promotion\">hip hop promotion<\/a>, placements in hip hop blogs, and comprehensive promo packs. We have specific genre-targeted playlists, and that is what makes us stand out. <\/p>",
+              "chose_faq_block": "third"
+            }
+          },
+          "9962a106-5be3-41de-b69e-546d29df80a0": {
+            "type": "faq",
+            "settings": {
+              "title": "<p><em><strong>What is the maximum amount for one transaction at your payment provider?<\/strong><\/em><\/p><p><\/p>",
+              "desc": "<p>Our payment system is not allowing to pay <em>more than 500$<\/em> as one transaction, unfortunately. So we have to tell you that if you want to purchase an order for more than 500$ please, contact us via mail, and we will absolutely help you to pay your order with multiple transactions. This kind of technical feature is related to our payment system's rule. It is not allowed to get more than 500$ in a one-time payment. We apologize for such an inconvenience. We are working to improve our system, and the checkout process was more accessible and more uncomplicated. Thank you so much for your understanding.<\/p>",
+              "chose_faq_block": "first"
+            }
+          }
+        },
+        "block_order": [
+          "737b2ef3-ffec-434a-a9b0-47a0f9403158",
+          "f4497b20-a22f-4f17-9550-d9422409292a",
+          "bbade3b2-aa84-486f-a9c0-14dce56ca329",
+          "e1535dd0-227c-43d4-9d9b-e3a814876292",
+          "5b027fb3-e39b-4fbf-9d76-8950906ff897",
+          "1a6dd30f-da91-41ed-9a39-fb86607dd10e",
+          "5c3f9d7d-a44e-4e96-b5af-2cef809fcaa6",
+          "6dade8cb-f81e-48fc-8fcb-72eef887d8c1",
+          "8aa99d0a-bbc4-4566-a87f-1deb4a1888cc",
+          "e6b49915-6c44-4e40-b126-20e20e98f272",
+          "5ab8a787-125a-4b2d-9e24-7a57a1aad46c",
+          "970718ab-b853-43c9-a3a4-b3141d930d4f",
+          "9962a106-5be3-41de-b69e-546d29df80a0"
+        ],
+        "settings": {
+          "title_first": "YOUR MUSIC PROMOTION GUIDE",
+          "title_second": "MUSIC PROMOTION SERVICES: GROW YOUR AUDIENCE",
+          "title_third": "HOW TO PROMOTE YOUR MUSIC WITH PLAYLIST PLACEMENT"
+        }
+      },
+      "16215400114187cf27": {
+        "type": "readmore-text",
+        "settings": {
+          "read_more_title": "Read more",
+          "read_more_content": "<p>ARTIST PUSH: BEST MUSIC PROMOTION SERVICE FOR INDEPENDENT ARTISTS<\/p>"
+        }
+      },
+      "1634719916c2f8afe2": {
+        "type": "faq-section",
+        "blocks": {
+          "2837c17c-4e43-485d-a239-40fa56feaa3c": {
+            "type": "faq",
+            "settings": {
+              "title": "<p>What is the SoundCloud premier?<\/p>",
+              "desc": "<p>SoundCloud launched the Premier program, which assists each artist in promoting their music to new fans on SoundCloud and sends it to every primary music service and wherever directly from Soundcloud account; it gets paid for generated plays instead of organic promotion. This revenue platform is designed to help the fans support artists and empower music consumers.<\/p>"
+            }
+          },
+          "6ca9e75f-3e5c-4d7c-9c47-d1fbfe16ac9d": {
+            "type": "faq",
+            "settings": {
+              "title": "<p>How to get SoundCloud premier?<\/p>",
+              "desc": "<p>If you want to get SoundCloud premier, you should be a creator with all the rights to your music and should produce your original content. You must own 100% of the rights (publishing, master, distribution). And in the past month, you should better have at least 5,000 works. This program will be limited to countries that offer SoundCloud Pro SoundCloud ads and advertisements.<\/p>"
+            }
+          },
+          "79f70f2c-1f53-47a3-98c4-1fd349f283e8": {
+            "type": "faq",
+            "settings": {
+              "title": "<p>Question-3<\/p>",
+              "desc": "<p>Answer<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "2837c17c-4e43-485d-a239-40fa56feaa3c",
+          "6ca9e75f-3e5c-4d7c-9c47-d1fbfe16ac9d",
+          "79f70f2c-1f53-47a3-98c4-1fd349f283e8"
+        ],
+        "settings": {
+          "enable_faq": true,
+          "title": "FAQ",
+          "hide_faq": true
+        }
+      },
+      "faq-section": {
+        "type": "faq-section",
+        "settings": {
+          "title": "",
+          "hide_faq": true
+        }
+      },
+      "faq-section_collection": {
+        "type": "faq-section_collection",
+        "blocks": {
+          "2fa5a2bf-6d6b-4a15-a7c3-09e180a60948": {
+            "type": "faq",
+            "disabled": true,
+            "settings": {
+              "title": "",
+              "desc": ""
+            }
+          }
+        },
+        "block_order": [
+          "2fa5a2bf-6d6b-4a15-a7c3-09e180a60948"
+        ],
+        "settings": {
+          "title": "How to get playlist placement",
+          "hide_faq": true
+        }
+      },
+      "faq-section_blog": {
+        "type": "faq-section_blog",
+        "settings": {
+          "title": "",
+          "hide_faq": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1599827114990",
+      "1599807231225",
+      "1599735033059",
+      "1599744230157",
+      "16195392156db76d96",
+      "1599819890932",
+      "1599828839017",
+      "1599832027734",
+      "1634719916c2f8afe2",
+      "16215400114187cf27"
+    ]
+  },
+  "presets": {
+    "Snowboards": {
+      "checkout_accent_color": "#006eff",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#006eff",
+      "checkout_call_to_action_color": "#006eff",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#030303",
+      "color_body_text": "#666",
+      "color_button_bg": "#006eff",
+      "color_button_text": "#fff",
+      "color_content_bg": "#fff",
+      "color_footer_bg": "#030303",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#030303",
+      "color_header_links": "#fff",
+      "color_hero_bg": "#006eff",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#1a1a1a",
+      "type_accent_bold": false,
+      "type_accent_family": "Google_Unica+One_400_sans",
+      "type_accent_spacing": true,
+      "type_accent_transform": true,
+      "type_base_family": "Google_Karla_400_sans",
+      "type_base_size": "16px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true,
+      "sections": {
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "placeholder": {
+              "type": "slide",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "placeholder"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "linklist": {
+              "type": "menu",
+              "settings": {}
+            },
+            "social": {
+              "type": "social",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "linklist",
+            "social"
+          ],
+          "settings": {}
+        },
+        "featured-collections": {
+          "type": "featured-collections",
+          "blocks": {
+            "featured-collections-0": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-1": {
+              "type": "collection",
+              "settings": {}
+            },
+            "featured-collections-2": {
+              "type": "collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "featured-collections-0",
+            "featured-collections-1",
+            "featured-collections-2"
+          ],
+          "settings": {}
+        },
+        "featured-products": {
+          "type": "featured-products",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "image-content": {
+          "type": "image-content",
+          "blocks": {
+            "image-content-0": {
+              "type": "image_block",
+              "settings": {}
+            },
+            "image-content-1": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-content-0",
+            "image-content-1"
+          ],
+          "settings": {}
+        }
+      },
+      "content_for_index": [
+        "featured-collections",
+        "featured-products",
+        "image-content"
+      ]
+    },
+    "Outdoors": {
+      "checkout_accent_color": "#f4743c",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#f4743c",
+      "checkout_call_to_action_color": "#f4743c",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f7f7f7",
+      "color_body_headings": "#1a1a1a",
+      "color_body_text": "#666",
+      "color_button_bg": "#c04f1d",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#213236",
+      "color_footer_text": "#fff",
+      "color_header_bg": "#213236",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#f4743c",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#425154",
+      "type_accent_bold": true,
+      "type_accent_family": "Google_Lora_400_serif",
+      "type_accent_spacing": false,
+      "type_accent_transform": false,
+      "type_base_family": "Google_Roboto_400_sans",
+      "type_base_size": "14px",
+      "type_nav_size": "15px",
+      "type_nav_spacing": false,
+      "type_nav_transform": false
+    },
+    "Boxing": {
+      "checkout_accent_color": "#d8232f",
+      "checkout_banner_background_color": "#fff",
+      "checkout_button_color": "#d8232f",
+      "checkout_call_to_action_color": "#d8232f",
+      "checkout_use_header_image": false,
+      "color_body_bg": "#f0f0f0",
+      "color_body_headings": "#222222",
+      "color_body_text": "#666",
+      "color_button_bg": "#d8232f",
+      "color_button_text": "#fff",
+      "color_content_bg": "#ffffff",
+      "color_footer_bg": "#222222",
+      "color_footer_text": "#ffffff",
+      "color_header_bg": "#222222",
+      "color_header_links": "#ffffff",
+      "color_hero_bg": "#d8232f",
+      "color_hero_text": "#fff",
+      "color_newsletter_input": "#303030",
+      "type_accent_bold": true,
+      "type_accent_family": "Google_Open+Sans+Condensed_400_sans",
+      "type_accent_spacing": false,
+      "type_accent_transform": true,
+      "type_base_family": "Google_Source+Sans+Pro_400_sans",
+      "type_base_size": "17px",
+      "type_nav_size": "14px",
+      "type_nav_spacing": true,
+      "type_nav_transform": true
+    }
+  }
+}

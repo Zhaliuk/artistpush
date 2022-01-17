@@ -1,0 +1,201 @@
+<div class="container">
+	<div class="collection-header">
+		<div class="flex-container flex-between flex-top">
+			<div class="collection-header__left">
+				<h1 class="page-title">{{ page.title }}</h1>
+			</div>
+			<div class="collection-header__right">
+				<div class="collection-desc">
+					{{ section.settings.desc }}
+				</div>
+			</div>
+		</div>
+	</div>
+	{% assign collect = section.blocks %}
+	{% if collect != blank %}
+		<div class="products-grid">
+			{% for item in collect %}
+				{% assign collection = collections[item.settings.collection] %}
+				<a href="{{ collection.url }}" class="popular-products-layout popular-products-layout-pp">
+					<div class="pp-icon">
+						<i class="icon icon-{{ item.settings.icon }}"></i>
+					</div>
+					<div class="title">{{ collection.title }}</div>
+					<div class="subtitle">{{ item.settings.subtitle }}</div>
+				</a>
+			{% endfor %}
+		</div>
+	{% endif %}
+  	{% if page.metafields.global.collection_text != blank %}
+      <div id="shopify-section-collection-footer" class="shopify-section">
+        <div class="collection-footer flex-container flex-between flex-top">
+            <div class="side flex-container flex-left flex-top">
+
+
+                <div class="read-more read-more-col">read more</div>
+            </div>
+            <div class="content">
+              {{ page.metafields.global.collection_text }}
+            </div>
+        </div>
+      </div>
+	{% endif %}
+</div>
+
+{% schema %}
+{
+	"name": "Collections",
+	"class": "index-section",
+	"max_blocks": 99,
+	"settings": [
+		{
+			"type": "text",
+			"label": "Section title",
+			"id": "section-title"
+		},
+		{
+			"type": "richtext",
+			"label": "Description",
+			"id": "desc"
+		}
+	],
+	"blocks": [
+		{
+			"type": "collection",
+			"name": "Collections",
+			"settings": [
+				{
+					"id": "collection",
+					"type": "collection",
+					"label": "Collection"
+				},
+				{
+					"id": "icon",
+					"type": "select",
+					"label": "Icon",
+					"options": [
+{
+"value": "artist-logo",
+"label": "Artist"
+},
+{
+"value": "release",
+"label": "Release"
+},
+{
+"value": "smm",
+"label": "SMM"
+},
+{
+"value": "promo",
+"label": "Promo"
+},
+{
+"value": "spotify",
+"label": "Spotify"
+},
+{
+"value": "apple",
+"label": "Apple"
+},
+{
+"value": "personal",
+"label": "Personal"
+},
+{
+"value": "playlist",
+"label": "Playlist"
+},
+{
+"value": "record",
+"label": "Record"
+},
+{
+"value": "wave-1",
+"label": "Wave 1"
+},
+{
+"value": "wave-2",
+"label": "Wave 2"
+},
+{
+"value": "resident",
+"label": "Resident advisor"
+},
+{
+"value": "music-blogs",
+"label": "Music blogs"
+},
+{
+"value": "triangles",
+"label": "Triangles"
+},
+{
+"value": "tiktok",
+"label": "Tik Tok"
+},
+{
+"value": "instagram",
+"label": "Instagram"
+},
+{
+"value": "twitter",
+"label": "Twitter"
+},
+{
+"value": "tidal",
+"label": "Tidal"
+},
+{
+"value": "deezer",
+"label": "Deezer"
+},
+{
+"value": "facebook",
+"label": "Facebook"
+},
+{
+"value": "sound-cloud",
+"label": "Sound-cloud"
+},
+{
+"value": "beatport",
+"label": "Beatport"
+},
+{
+"value": "mixcloud",
+"label": "Mixcloud"
+},
+{
+"value": "napster",
+"label": "Napster"
+},
+{
+"value": "amazon-prime",
+"label": "Amazon-prime"
+},
+{
+"value": "shazam",
+"label": "Shazam"
+},
+{
+"value": "youtube",
+"label": "Youtube"
+},
+{
+"value": "hiphop",
+"label": "HipHop"
+}
+					]
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "Collections",
+			"category": "Collections"
+		}
+	]
+}
+{% endschema %}

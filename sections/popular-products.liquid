@@ -1,0 +1,65 @@
+<div class="section section-popular-products">
+    <div class="container">
+        <div class="section-heading flex-container flex-between flex-bottom">
+            <h2 class="section-heading__title">{{ section.settings.section-title }}</h2>
+            <div class="section-heading__more"><a href="{{ section.settings.va-url }}" class="btn">{{ section.settings.va-text }}</a></div>
+        </div>
+        {% assign products = section.blocks %}
+        {% if products != blank %}
+          <div class="slider flex-container">
+            {% for item in products %}
+              <div class="slider-item">
+                {% assign product = all_products[item.settings.products] %}
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                {% include 'product-layout' %}
+              </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Popular products",
+  "class": "index-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section title",
+      "id": "section-title"
+    },
+    {
+      "type": "text",
+      "label": "View All button text",
+      "id": "va-text",
+      "default": "View All"
+    },
+    {
+      "type": "url",
+      "label": "View All button link",
+      "id": "va-url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "label": "Product",
+          "id": "products"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Popular products",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

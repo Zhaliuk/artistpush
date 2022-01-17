@@ -1,0 +1,40 @@
+
+{% assign items = section.blocks %}
+{% if items != blank %}
+<div class="section">
+    <div class="ticker-wrap">
+        <marquee behavior="scroll" direction="left" scrolldelay="70" truespeed>
+            {% for item in items %}
+                <span>{{ item.settings.items }}</span>
+            {% endfor %}
+        </marquee>
+    </div>
+</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Ticker",
+  "class": "index-section",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Ticker",
+      "settings": [
+        {
+          "id": "items",
+          "type": "text",
+          "label": "Items"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ticker",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

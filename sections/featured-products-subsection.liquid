@@ -1,0 +1,29 @@
+{%- assign collection = collections[section.settings.collection] -%}
+{%- if collection != blank -%}
+    {% if collection.products_count != 0 %}
+        <div class="sp-fp">
+            <div class="section-heading flex-container flex-between flex-bottom">
+                <div class="section-heading__title">{{ 'layout.sidebar.featured_products' | t }}</div>
+                <div class="section-heading__more"><a href="/collections/all" class="btn">View all</a></div>
+            </div>
+            <div class="products-grid products-grid-collections">
+                {% for product in collection.products limit: 3 %}
+                    {% include 'product-layout', product: product %}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Featured products",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    }
+  ]
+}
+{% endschema %}

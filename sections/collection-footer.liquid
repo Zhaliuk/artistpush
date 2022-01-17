@@ -1,0 +1,46 @@
+
+{% if current_tags %}
+
+    {%capture  current_tag %}
+        {{current_tags.first|strip}}
+    {% endcapture  %}
+    {% for tag in collection.metafields.global %}
+        {%-capture tag_name-%}
+            {{tag | first}}
+        {% endcapture  %}
+        {% if current_tag == tag_name  %}
+            {%-capture desc_tag-%}
+                {{tag | last}}
+            {% endcapture  %}
+
+        {% endif %}
+    {% endfor %}
+{% endif %}
+<div class="collection-footer flex-container flex-between flex-top">
+    <div class="side flex-container flex-left flex-top">
+
+        <div class="read-more read-more-col">read more</div>
+    </div>
+    <div class="content">
+        {% comment %}{{ collection.metafields.global.collection_text }}{% endcomment %}
+        {% if desc_tag %}
+            {{desc_tag}}
+        {%else%}
+            {{ collection.metafields.global.collection-text }}
+            {{ collection.metafields.global.collection_text }}
+        {%endif%}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Music blog",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "blog",
+      "label": "Music blog"
+    }
+  ]
+}
+{% endschema %}

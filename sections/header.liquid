@@ -1,0 +1,150 @@
+	<header class="header">
+		<div class="container">
+			<div class="header__top">
+				<div class="flex-container flex-between flex-middle">
+					<div class="header__nav-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="header__logo">
+						<a href="/"><img src="{{ 'artist-push-vector.svg' | asset_url }}" alt=""></a>
+					</div>
+					<div class="header__actions flex-container flex-between flex-middle">
+						<div class="header__search">
+							<form action="/search" method="get" role="search">
+								<input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}" class="drawer__search-input">
+
+								<button type="submit">
+									<i class="icon icon-search"></i>
+									{% comment %}
+										<span>{{ 'general.search.submit' | t }}</span>
+									{% endcomment %}
+								</button>
+							</form>
+						</div>
+						<div class="header__cart">
+							<a href="/cart" title="{{ 'layout.cart.title' | t }}">
+								<i class="icon icon-cart"></i>
+								<span class="header__cart-active {% if cart.item_count == 0 %}hide{% endif %}">{{ cart.item_count }}</span>
+							</a>
+						</div>
+						<div class="header__account-d">
+							{% if customer %}
+								<a href="/account">
+									{{ 'layout.customer.account' | t }}
+								</a>
+								{{ 'layout.customer.log_out' | t | customer_logout_link }}
+							{% else %}
+								{{ 'layout.customer.account' | t | customer_login_link }}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header__nav flex-container flex-between flex-top">
+				<div class="header__search-mob">
+					<form action="/search" method="get" role="search">
+						<input type="search" name="q" placeholder="{{ 'general.search.placeholder' | t }}" aria-label="{{ 'general.search.placeholder' | t }}" class="drawer__search-input">
+
+						<button type="submit">
+							<i class="icon icon-search"></i>
+							{% comment %}
+								<span>{{ 'general.search.submit' | t }}</span>
+							{% endcomment %}
+						</button>
+					</form>
+				</div>
+				<div class="header__main-nav">
+					<ul class="flex-container flex-left flex-middle">
+						{% for link in linklists[section.settings.main_linklist].links %}
+							{% assign child_list_handle = link.title | handleize %}
+							{% comment %}
+								Use full width layout if there are 7+ links or parent has products
+							{% endcomment %}
+							{% assign meganav_use_columns = false %}
+							{% assign nav_parent_product_count = link.object.products_count %}
+							{% unless nav_parent_product_count == blank or nav_parent_product_count == 0 %}
+							{% assign meganav_use_columns = true %}
+							{% endunless %}
+							{% if linklists[child_list_handle].links.size > 7 %}
+								{% assign meganav_use_columns = true %}
+							{% endif %}
+
+							{% if linklists[child_list_handle].links != blank %}
+								<li class="{% if link.active %} active{% endif %} has-child">
+									<a href="{{ link.url }}">{{ link.title }}
+
+									</a>
+									<ul class="sub-menu">
+										{% include 'meganav', fixed_width: false, show_title: true, show_links: true, show_products: true %}
+									</ul>
+								</li>
+							{% else %}
+								<li class="{% if link.active %} site-nav--active{% endif %}">
+									<a href="{{ link.url }}">{{ link.title }}</a>
+								</li>
+							{% endif %}
+						{% endfor %}
+					</ul>
+				</div>
+				<div class="header__account">
+					{% if shop.customer_accounts_enabled %}
+							{% if customer %}
+								<a href="/account">
+									{{ 'layout.customer.account' | t }}
+								</a>
+								{{ 'layout.customer.log_out' | t | customer_logout_link }}
+							{% else %}
+								{{ 'layout.customer.account' | t | customer_login_link }}
+							{% endif %}
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</header>
+
+{% schema %}
+{
+	"name": "Header",
+	"settings": [
+		{
+			"type": "image_picker",
+			"id": "logo",
+			"label": "Logo image"
+		},
+		{
+			"type": "text",
+			"id": "logo_max_width",
+			"label": "Custom logo width (in pixels)",
+			"default": "450"
+		},
+		{
+			"type": "link_list",
+			"id": "main_linklist",
+			"label": "Menu",
+			"default": "main-menu"
+		},
+		{
+			"type": "header",
+			"content": "Announcement bar"
+		},
+		{
+			"type": "checkbox",
+			"id": "promo_bar_enable",
+			"label": "Show announcement"
+		},
+		{
+			"type": "text",
+			"id": "promo_bar_text",
+			"label": "Announcement text"
+		},
+		{
+			"type": "url",
+			"id": "promo_bar_link",
+			"label": "Announcement link",
+			"info": "Optional"
+		}
+	]
+}
+{% endschema %}

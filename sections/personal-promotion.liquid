@@ -1,0 +1,114 @@
+<div class="section section-personal">
+    <div class="container">
+        <div class="section-heading flex-container flex-between flex-bottom">
+            <h2 class="section-heading__title">{{ section.settings.section-title }}</h2>
+            <div class="section-heading__more">
+                <a href="{{ section.settings.va-url }}" class="btn">{{ section.settings.va-text }}</a>
+            </div>
+        </div>
+        {% assign collect = section.blocks %}
+        {% if collect != blank %}
+            <div class="products-grid">
+                {% for item in collect %}
+                    {% assign collection = collections[item.settings.collection] %}
+                    <a href="{{ collection.url }}" class="popular-products-layout popular-products-layout-pp">
+                        <div class="pp-icon">
+                            <i class="icon icon-{{ item.settings.icon }}"></i>
+                        </div>
+                        <div class="title">{{ collection.title }}</div>
+                        <div class="subtitle">{{ item.settings.subtitle }}</div>
+                    </a>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Personal promotion",
+  "class": "index-section",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section title",
+      "id": "section-title"
+    },
+    {
+      "type": "text",
+      "label": "View All button text",
+      "id": "va-text",
+      "default": "View All"
+    },
+    {
+      "type": "url",
+      "label": "View All button link",
+      "id": "va-url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "id": "collection",
+          "type": "collection",
+          "label": "Collection"
+        },
+        {
+          "id": "icon",
+          "type": "select",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "hiphop",
+              "label": "HipHop"
+            },
+            {
+              "value": "artist-logo",
+              "label": "Artist"
+            },
+            {
+              "value": "release",
+              "label": "Release"
+            },
+            {
+              "value": "smm",
+              "label": "SMM"
+            },
+            {
+              "value": "promo",
+              "label": "Promo"
+            },
+            {
+              "value": "apple",
+              "label": "Apple"
+            },
+            {
+              "value": "resident",
+              "label": "Resident advisor"
+            },
+            {
+              "value": "music-blogs",
+              "label": "Music blogs"
+            }
+          ]
+        },
+        {
+          "id": "subtitle",
+          "type": "text",
+          "label": "Subtitle"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Personal promotion",
+      "category": "Product"
+    }
+  ]
+}
+{% endschema %}

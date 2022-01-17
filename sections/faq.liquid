@@ -1,0 +1,90 @@
+<h3 style="text-align: center">{{ section.settings.title_first }}</h3>
+{% for block in section.blocks  %}
+    {% if block.settings.chose_faq_block == "first" %}
+        <div class="faqItem">
+            <div class="faqTitle">
+                {{ block.settings.title }}
+            </div>
+            <div class="faqContent">
+                {{ block.settings.desc }}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+<h3 style="text-align: center">{{ section.settings.title_second }}</h3>
+{% for block in section.blocks  %}
+    {% if block.settings.chose_faq_block == "second" %}
+        <div class="faqItem">
+            <div class="faqTitle">
+                {{ block.settings.title }}
+            </div>
+            <div class="faqContent">
+                {{ block.settings.desc }}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+<h3 style="text-align: center">{{ section.settings.title_third }}</h3>
+{% for block in section.blocks  %}
+    {% if block.settings.chose_faq_block == "third" %}
+        <div class="faqItem">
+            <div class="faqTitle">
+                {{ block.settings.title }}
+            </div>
+            <div class="faqContent">
+                {{ block.settings.desc }}
+            </div>
+        </div>
+    {% endif %}
+{% endfor %}
+{% schema %}
+{
+"name": "Faq",
+"settings": [
+{
+"type": "text",
+"label": "Title for first faq block",
+"id": "title_first"
+},
+{
+"type": "text",
+"label": "Title for second faq block",
+"id": "title_second"
+},
+{
+"type": "text",
+"label": "Title for third faq block",
+"id": "title_third"
+}
+],
+"blocks": [
+{
+"type": "faq",
+"name": "Faq item",
+"settings": [
+{
+"type": "richtext",
+"label": "Title",
+"id": "title"
+},
+{
+"type": "richtext",
+"label": "Description",
+"id": "desc"
+},
+{
+"type": "select",
+"id": "chose_faq_block",
+"options": [
+{ "value": "first", "label": "First block"},
+{ "value": "second", "label": "Second block"},
+{ "value": "third", "label": "Third block"}
+],
+"label": "Select faqs block"
+}
+]
+}
+
+]
+}
+{% endschema %}

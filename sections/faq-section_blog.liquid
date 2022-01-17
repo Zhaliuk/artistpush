@@ -1,0 +1,87 @@
+{% if section.settings.enable_faq == true %}
+<div class="container">
+    <div class="content-block" {% if section.settings.hide_faq == true %}style="display: none" {% endif %}>
+        <div class="rte rte--indented-images">
+            <div class="about-content">
+                <h3 style="text-align: center">{{ section.settings.title }}</h3>
+                {% for block in section.blocks  %}
+                        <div class="faqItem">
+                            <div class="faqTitle">
+                                {{ block.settings.title }}
+                            </div>
+                            <div class="faqContent">
+                                {{ block.settings.desc }}
+                            </div>
+                        </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{%if section.blocks != blank %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {% for block in section.blocks  %}
+            {
+                "@type": "Question",
+                "name": "{{ block.settings.title | strip_html }}",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "{{ block.settings.desc }}"
+                }
+            }{% if forloop.last == true %}{% else %},{% endif %}
+            {% endfor %}
+        ]
+    }
+</script>
+{% endif %}
+{% endif %}
+
+{% schema %}
+{
+"name": "Faq",
+"settings": [
+{
+"type": "checkbox",
+"id": "enable_faq",
+"label": "Enable faq block",
+"default": false
+},
+{
+"type": "text",
+"label": "Title for faq block",
+"id": "title"
+},
+{
+"type": "checkbox",
+"id": "hide_faq",
+"label": "Hide faq block",
+"default": false
+}
+],
+"blocks": [
+{
+"type": "faq",
+"name": "Faq item",
+"settings": [
+{
+"type": "richtext",
+"label": "Title",
+"id": "title"
+},
+{
+"type": "richtext",
+"label": "Description",
+"id": "desc"
+}
+]
+}
+
+]
+}
+{% endschema %}
+

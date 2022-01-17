@@ -1,0 +1,110 @@
+
+{% unless template == 'index' or template == 'cart' or template == 'list-collections' %}
+<nav itemscope itemtype="http://schema.org/BreadcrumbList"  class="breadcrumb" role="navigation" aria-label="breadcrumbs">
+  <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+    <a href="https://artistpush.me/" itemprop="item" title="Home"><span itemprop="name">Home</span></a>
+    <meta content="1" itemprop="position">
+  </span>
+  {% if template contains 'page' %}
+    <span aria-hidden="true">&rsaquo;</span>
+ 	 <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ page.title }}</span>
+    <meta content="2" itemprop="position">
+    </span>
+  {% elsif template contains 'product' %}
+      {% if product.collections[0] %}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a href="{{ product.collections[0].url }}" itemprop="item" title="Home"><span itemprop="name">{{ product.collections[0].title }}</span></a>
+
+            <meta content="2" itemprop="position">
+        </span>
+
+        <span aria-hidden="true">&rsaquo;</span>
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">{{ product.title }}</span>
+            <meta content="2" itemprop="position">
+        </span>
+      {% else %}
+        <span aria-hidden="true">&rsaquo;</span>
+        <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="name">{{ product.title }}</span>
+            <meta content="2" itemprop="position">
+        </span>
+      {% endif %}
+      {% elsif template contains 'collection' and collection.handle %}
+          <span aria-hidden="true">&rsaquo;</span>
+
+          {% if current_tags %}
+              {% capture url %}/collections/{{ collection.handle }}{% endcapture %}
+              <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+          <a href="{{ url }}" itemprop="item"><span itemprop="name">{{ collection.title }}</span></a>
+          <meta content="2" itemprop="position">
+     	</span>
+              <span aria-hidden="true">&rsaquo;</span>
+              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      		<span itemprop="name">{{ current_tags | join: " + " }}</span>
+      		<meta content="3" itemprop="position">
+        </span>
+
+          {% else %}
+              {% if collection.title == "Spotify Plays" or collection.title == "Spotify Followers" or collection.title == "Spotify Monthly Listeners" or collection.title == "Spotify Playlists" %}
+                  <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+          <a href="https://artistpush.me/pages/streaming-promotion" itemprop="item"><span itemprop="name">Streaming Promotion</span></a>
+          <meta content="2" itemprop="position">
+     	</span>
+                  <span aria-hidden="true">&rsaquo;</span>
+                  <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      		<span itemprop="name">{{ collection.title }}</span>
+      		<meta content="3" itemprop="position">
+        </span>
+
+              {% else %}
+                  <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+      		<span itemprop="name">{{ collection.title }}</span>
+      		<meta content="2" itemprop="position">
+        </span>
+
+              {% endif %}
+          {% endif %}
+      {% elsif template == 'blog' %}
+          <span aria-hidden="true">&rsaquo;</span>
+          {% if current_tags %}
+              <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+    <a href="{{ blog.url }}" itemprop="item"><span itemprop="name">{{ blog.title }}</span></a>
+    <meta content="2" itemprop="position">
+  </span>
+
+              <span aria-hidden="true">&rsaquo;</span>
+              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ current_tags | join: " + " }}</span>
+    <meta content="3" itemprop="position">
+    </span>
+
+          {% else %}
+              <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ blog.title }}</span>
+    <meta content="2" itemprop="position">
+    </span>
+
+          {% endif %}
+      {% elsif template == 'article' %}
+          <span aria-hidden="true">&rsaquo;</span>
+          <span itemscope itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+    <a href="{{ blog.url }}" itemprop="item"><span itemprop="name">{{ blog.title }}</span></a>
+    <meta content="2" itemprop="position">
+  </span>
+          <span aria-hidden="true">&rsaquo;</span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ article.title }}</span>
+    <meta content="3" itemprop="position">
+    </span>
+      {% else %}
+          <span aria-hidden="true">&rsaquo;</span>
+          <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+    <span itemprop="name">{{ page_title }}</span>
+    <meta content="2" itemprop="position">
+    </span>
+      {% endif %}
+</nav>
+{% endunless %}

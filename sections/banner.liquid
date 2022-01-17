@@ -1,0 +1,43 @@
+<div class="section-banner">
+  <div class="container">
+    <div class="section-banner__content">
+      <div class="banner-title">{{ section.settings.banner-title }}</div>
+      <div class="banner-subtitle">{{ section.settings.banner-subtitle }}</div>
+    </div>
+  </div>
+  <div class="banner-video banner-img">
+
+    <img class="image" src="https://cdn.shopify.com/s/files/1/2373/2631/files/Girl.png?v=1635845593" alt="">
+  </div>
+
+</div>
+
+{% schema %}
+{
+  "name": "Banner",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Banner title",
+      "id": "banner-title"
+    },
+    {
+      "type": "text",
+      "label": "Banner subtitle",
+      "id": "banner-subtitle"
+    },
+    {
+      "type": "image_picker",
+      "label": "Image",
+      "id": "image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner",
+      "category": "Collection"
+    }
+  ]
+}
+{% endschema %}

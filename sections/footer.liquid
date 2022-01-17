@@ -1,0 +1,272 @@
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="flex-container flex-between flex-top">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="{{ 'artist-push-vector.svg' | asset_url }}" alt="">
+                </div>
+            </div>
+            {% if linklists[section.settings.link_list].links.size > 0 %}
+                <div class="footer-column">
+                    <div class="footer-title">General</div>
+                    <ul class="footer-nav">
+                        {% for link in linklists[section.settings.link_list].links %}
+                            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+            <div class="footer-column">
+                <div class="footer-title">Sign up</div>
+                <div class="footer-singup">
+                    {% form 'customer' %}
+                        {{ form.errors | default_errors }}
+                        {% if form.posted_successfully? %}
+                            <p class="form-success">{{ 'general.newsletter_form.confirmation' | t }}</p>
+                        {% else %}
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <div class="input-group">
+                                <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_placeholder' | t }}" name="contact[email]" id="NewsletterEmail-{{ block.id }}" class="input-group__field site-footer__newsletter-input" autocorrect="off" autocapitalize="off">
+                                <div class="input-group__btn">
+                                    <button type="submit" class="btn" name="commit">
+
+                                    </button>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endform %}
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-soc">
+                    <div class="footer-title">We’re a very, very social bunch</div>
+                    <ul>
+                        {% if settings.social_facebook_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_facebook_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Facebook' }}">
+                                    <i class="icon icon-facebook"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_twitter_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_twitter_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Twitter' }}">
+                                    <i class="icon icon-twitter"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_pinterest_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_pinterest_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Pinterest' }}">
+                                    <i class="icon icon-pinterest"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_instagram_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_instagram_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Instagram' }}">
+                                    <i class="icon icon-instagram"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_tumblr_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_tumblr_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Tumblr' }}">
+                                    {% include 'icon-tumblr' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_snapchat_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_snapchat_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Snapchat' }}">
+                                    {% include 'icon-snapchat' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_youtube_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_youtube_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'YouTube' }}">
+                                    {% include 'icon-youtube' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_vimeo_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_vimeo_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Vimeo' }}">
+                                    {% include 'icon-vimeo' %}
+                                    <span class="icon__fallback-text">Vimeo</span>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_soundCloud_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_soundCloud_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'SoundCloud' }}">
+                                    <i class="icon icon-sound-cloud"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_mixcloud_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_mixcloud_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Mixcloud' }}">
+                                    <i class="icon icon-mixcloud"></i>
+                                </a>
+                            </li>
+                        {% endif %}
+                        {% if settings.social_linkedin_link != blank %}
+                            <li>
+                                <a href="{{ settings.social_linkedin_link | escape }}" title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'Linkedin' }}">
+                                    {% include 'icon-linkedin' %}
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+
+                    {% if section.settings.email != blank %}
+                        <div class="footer-title footer-title-em">Email us</div>
+                        <a class="footer-email" href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom flex-container flex-between flex-top">
+            <div class="footer-copyright">
+                {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: '/' }}. {{ powered_by_link }}
+            </div>
+            <div class="footer-payment flex-container flex-right flex-top">
+                {% unless shop.enabled_payment_types == empty %}
+                {% assign payment_icons_available = 'amazon_payments,american_express,apple_pay,bitcoin,cirrus,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,jcb,litecoin,maestro,master,paypal,visa' | split: ',' %}
+                        {% for type in shop.enabled_payment_types %}
+                            {% if payment_icons_available contains type %}
+                                    {% assign icon_name = type | prepend: 'icon-' %}
+                                    {% include icon_name %}
+                            {% endif %}
+                        {% endfor %}
+                {% endunless %}
+            </div>
+        </div>
+    </div>
+</footer>
+<span class="up"></span>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "id": "logo",
+      "type": "image_picker",
+      "label": "Logo"
+    },
+    {
+      "id": "link_list",
+      "type": "link_list",
+      "label": "Menu"
+    },
+    {
+      "id": "email",
+      "type": "text",
+      "label": "Email"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "social",
+      "name": "Social accounts",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "title_enable",
+          "label": "Show header",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Follow us"
+        },
+        {
+          "type": "radio",
+          "id": "align",
+          "label": "Icon alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "left"
+        }
+      ]
+    },
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "id": "link_list",
+          "type": "link_list",
+          "label": "Menu",
+          "default": "footer"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading",
+          "default": "Text column"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Share store details, promotions, or brand content with your customers</p>"
+        }
+      ]
+    },
+    {
+      "type": "newsletter",
+      "name": "Newsletter",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "color",
+          "id": "color_newsletter_input",
+          "label": "Newsletter field",
+          "default": "#1a1a1a"
+        },
+        {
+          "type": "color",
+          "id": "color_newsletter_input_text",
+          "label": "Newsletter text",
+          "default": "#fff"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,56 @@
+{%  assign sortBy = content_for_header | split:'"pageurl":"' | last | split:'"' | first | split:'?' | last | split:'=' | last %}
+<div class="container">
+  <div class="collection-header">
+    <div class="flex-container flex-between flex-top">
+      <div class="collection-header__left">
+        <h1 class="page-title">Playlist placement</h1>
+        <div class="collection-filters">
+          <div class="collection-sort">
+            <label for="SortTags" class="collection-sort__label">Sort by</label>
+            <div class="collection-sort__select">
+              <select name="SortTags" id="sortCollestions" class="collection-sort__input">
+                  <option value="title">Name</option>
+                  <option {% if sortBy == 'all_products_count' %} selected{% endif %} value="all_products_count">Products count</option>
+                  <option {% if sortBy == 'published_at' %} selected{% endif %} value="published_at">Publish date</option>
+              </select>
+              <span class="collection-sort__toggle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="collection-header__right">
+          <div class="collection-desc">
+            {{ section.settings.cl-text }}
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="products-grid">
+    {% if sortBy == 'published_at' or sortBy == 'all_products_count' %}
+      {%- assign list_collections = collections | sort: sortBy -%}
+    {% else %}
+      {%- assign list_collections = collections -%}
+    {% endif %}
+    {% for collection in list_collections %}
+      <a href="{{ collection.url }}" class="popular-products-layout popular-products-layout-pp">
+        <div class="pp-icon">
+          <img src="{{ collection.image.src | img_url: '60x60' }}" alt="">
+        </div>
+        <div class="title">{{ collection.title }}</div>
+      </a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Collections list page",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "cl-text",
+      "label": "Text"
+    }
+  ]
+}
+{% endschema %}

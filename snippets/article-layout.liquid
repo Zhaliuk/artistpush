@@ -1,0 +1,9 @@
+<a href="{{ article.url }}" class="blog-layout">
+    {% if article.image %}
+        <div class="pct"><img data-src="{{ article | img_url: '670x450', crop: 'center' }}" class="lazyload" alt="{{ article.title | escape }}" /></div>
+    {% endif %}
+    <div class="title">{{ article.title }}</div>
+    {% assign content = article.excerpt_or_content %}
+    <div class="desc">{{ content | strip_html | truncatewords: 20 }}</div>
+    <div class="date">{{ article.published_at | date: '%B %d, %Y' }}</div>
+</a>

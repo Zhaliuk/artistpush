@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="content-block">
+    <div class="rte rte--indented-images">
+      <div class="about-pct"><img src="{{ 'hands.png' | asset_url }}" alt=""></div>
+      <div class="about-content">
+        <h1 class="page-title">{{ page.title }}</h1>
+      </div>
+      <div class="about-content">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+  {% section 'featured-products-subsection' %}
+</div>

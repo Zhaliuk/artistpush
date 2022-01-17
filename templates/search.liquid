@@ -1,0 +1,88 @@
+{% paginate search.results by 20 %}
+
+    <div class="container">
+        <header class="grid medium-up--grid--table section-header small--text-center">
+            <div class="search-form">
+                <div class="main-content">
+                    <form action="/search" method="get" class="input-group" role="search">
+                        <h1 class="page-title">{{ 'general.search.title' | t }}</h1>
+                        {% comment %}<input type="hidden" name="type" value="product">{% endcomment %}
+                        <input type="search" name="q" value="{{ search.terms | escape }}"
+                               placeholder="{{ 'general.search.placeholder' | t }}"
+                               aria-label="{{ 'general.search.placeholder' | t }}"
+                               class="input-group__field input--content-color">
+
+                        <div class="input-group__btn">
+                            <button type="submit" class="btn btn--narrow">
+                                {% include 'icon-arrow-right' %}
+                                <span class="icon__fallback-text">{{ 'general.search.submit' | t }}</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        {% if search.performed %}
+
+            {% comment %}
+              Find the number of products and pages in the search results
+            {% endcomment %}
+            {% assign product_count = 0 %}
+            {% assign page_count = 0 %}
+            {% for item in search.results %}
+                {% if item.object_type == 'product' %}
+                    {% assign product_count = product_count | plus: 1 %}
+                {% else %}
+                    {% assign page_count = page_count | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+
+            {% if product_count > 0 %}
+                <h2 class="h4 small--text-center">{{ 'general.search.products' | t }}</h2>
+
+                <div class="grid grid--no-gutters grid--uniform">
+                    <div class="products-grid">
+                        {% for item in search.results %}
+                            {% if item.object_type == 'product' %}
+                                {% include 'product-layout', product: item %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if product_count and page_count %}
+                <hr>
+            {% endif %}
+
+            {% if page_count > 0 %}
+                <h2 class="h4 small--text-center">{{ 'general.search.pages_and_articles' | t }}</h2>
+
+                <div class="content-block content-block--no-bottom-padding">
+                    <div class="blog-grid">
+                        {% for item in search.results %}
+                            {% unless item.object_type == 'product' %}
+                                <div class="blog-layout">
+                                    <div class="title">{{ item.title | link_to: item.url }}</div>
+                                    <div class="desc">{{ item.content | strip_html | truncate: 150 }}</div>
+                                    <p>
+                                        <a href="{{ item.url }}"><strong>{{ 'general.search.read_more' | t }}</strong></a>
+                                    </p>
+                                </div>
+                            {% endunless %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+
+            {% if paginate.pages > 1 %}
+                <div class="pagination">
+                    {{ paginate | default_pagination | replace: '&laquo; Previous', '&larr;' | replace: 'Next &raquo;', '&rarr;' }}
+                </div>
+            {% endif %}
+
+        {% endif %}
+    </div>
+
+{% endpaginate %}

@@ -1,0 +1,99 @@
+<div class="section">
+    <div class="container">
+        <div class="section-heading flex-container flex-between flex-bottom">
+            <div class="section-heading__title">{{ section.settings.section-title }}</div>
+        </div>
+        {% assign reviews = section.blocks %}
+        {% if reviews != blank %}
+            <div class="reviews-wrap">
+                <div class="quotes-1">
+                    <img src="{{ 'quotes1.svg' | asset_url }}" alt="">
+                </div>
+                <a href="/pages/user-review" class="reviews-first">
+                    {% assign fReview = reviews[0] %}
+                    <div class="review-layout review-layout-first">
+                        <div class="review">“{{ fReview.settings.review }}”</div>
+                        <div class="data">
+                            <div class="photo"><img src="{{ fReview.settings.photo | img_url: '47x47' }}" alt=""></div>
+                            <div class="info">
+                                <div class="author">{{ fReview.settings.author }}</div>
+                                <div class="activity">{{ fReview.settings.activity }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="reviews-grid-wrap">
+                    {% assign minus = reviews.size | minus: 1 %}
+                    <div class="reviews-grid" style="width: calc({{ 100 | times: minus }}% - 40px)">
+                        {% assign key = 0 %}
+                        {% for item in reviews %}
+                            {% assign key = key | plus: 1 %}
+                            {% if key == 1 %}
+                            {% else %}
+                                <a href="/pages/user-review" class="review-layout">
+                                    <div class="review">“{{ item.settings.review }}”</div>
+                                    <div class="data">
+                                        <div class="photo"><img src="{{ item.settings.photo | img_url: '47x47' }}" alt=""></div>
+                                        <div class="info">
+                                            <div class="author">{{ item.settings.author }}</div>
+                                            <div class="activity">{{ item.settings.activity }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "class": "index-section",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "text",
+      "label": "Section title",
+      "id": "section-title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "reviews",
+      "name": "Reviews",
+      "settings": [
+        {
+          "id": "author",
+          "type": "text",
+          "label": "Author"
+        },
+        {
+          "id": "activity",
+          "type": "text",
+          "label": "Activity"
+        },
+        {
+          "id": "photo",
+          "type": "image_picker",
+          "label": "Photo"
+        },
+        {
+          "id": "review",
+          "type": "text",
+          "label": "review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews",
+      "category": "Reviews"
+    }
+  ]
+}
+{% endschema %}
