@@ -1,10 +1,22 @@
 {
   "sections": {
     "main": {
-      "type": "article-alternate-template"
+      "type": "article-alternate-template",
+      "settings": {
+        "collection": "",
+        "social_sharing_blog": true
+      }
+    },
+    "1642504003de98a9cc": {
+      "type": "featured-products-subsection",
+      "disabled": true,
+      "settings": {
+        "collection": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1642504003de98a9cc"
   ]
 }
