@@ -9,6 +9,45 @@
     },
     "ticker": {
       "type": "ticker",
+      "blocks": {
+        "b963f51e-dca1-4e15-8a09-73d669eef6eb": {
+          "type": "collection",
+          "settings": {
+            "items": "URGENT! We recently changed our payment system."
+          }
+        },
+        "17a535b6-0fc7-450f-a4dd-a43255b49346": {
+          "type": "collection",
+          "settings": {
+            "items": "It turned out that due to the new policy, the master card blocks all payments from the USA for social media marketing."
+          }
+        },
+        "ebd6aae1-b942-4bc9-934d-78deeb91db2d": {
+          "type": "collection",
+          "settings": {
+            "items": "The only option is to pay with a Visa credit card or we can send PayPal invoice."
+          }
+        },
+        "f1a00583-e861-476d-a5e2-a19e07db0dcb": {
+          "type": "collection",
+          "settings": {
+            "items": "Also you can pay with Transferwise."
+          }
+        },
+        "abc1f49c-c02f-4709-9e13-71e1d8a2c525": {
+          "type": "collection",
+          "settings": {
+            "items": "Please, write us >> artistpushnet@gmail.com"
+          }
+        }
+      },
+      "block_order": [
+        "b963f51e-dca1-4e15-8a09-73d669eef6eb",
+        "17a535b6-0fc7-450f-a4dd-a43255b49346",
+        "ebd6aae1-b942-4bc9-934d-78deeb91db2d",
+        "f1a00583-e861-476d-a5e2-a19e07db0dcb",
+        "abc1f49c-c02f-4709-9e13-71e1d8a2c525"
+      ],
       "settings": {
       }
     },
