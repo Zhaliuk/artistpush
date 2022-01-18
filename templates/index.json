@@ -114,10 +114,50 @@
             "collection": "spotify-promotion",
             "icon": "spotify"
           }
+        },
+        "b6faa3d9-0bc5-4ba8-acb9-47189edb94b2": {
+          "type": "collection",
+          "settings": {
+            "collection": "tidal-promotion",
+            "icon": "tidal"
+          }
+        },
+        "23a9c4e2-b52b-4d77-b527-aafc96d778d4": {
+          "type": "collection",
+          "settings": {
+            "collection": "deezer-promotion",
+            "icon": "deezer"
+          }
+        },
+        "5b01bf56-eaa1-4fae-b793-603cf2a00cb1": {
+          "type": "collection",
+          "settings": {
+            "collection": "amazon-prime-music-promotion",
+            "icon": "amazon-prime"
+          }
+        },
+        "5dc8f008-2f10-49f9-a4d5-f3b343b1ed41": {
+          "type": "collection",
+          "settings": {
+            "collection": "audiomack-promotion",
+            "icon": "triangles"
+          }
+        },
+        "f0492ec0-8b72-40fd-af20-0e0865f727c9": {
+          "type": "collection",
+          "settings": {
+            "collection": "pandora-promotion",
+            "icon": "playlist"
+          }
         }
       },
       "block_order": [
-        "01692802-873a-4721-85e9-cdb292d40e25"
+        "01692802-873a-4721-85e9-cdb292d40e25",
+        "b6faa3d9-0bc5-4ba8-acb9-47189edb94b2",
+        "23a9c4e2-b52b-4d77-b527-aafc96d778d4",
+        "5b01bf56-eaa1-4fae-b793-603cf2a00cb1",
+        "5dc8f008-2f10-49f9-a4d5-f3b343b1ed41",
+        "f0492ec0-8b72-40fd-af20-0e0865f727c9"
       ],
       "settings": {
         "section-title": "Streaming promotion",
