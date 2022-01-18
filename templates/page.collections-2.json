@@ -1,10 +1,74 @@
 {
-"sections": {
-"main": {
-"type": "section-collections-2"
-}
-},
-"order": [
-"main"
-]
+  "sections": {
+    "main": {
+      "type": "section-collections-2",
+      "blocks": {
+        "cb3c963c-df68-4947-b4f9-bd0087b57ce9": {
+          "type": "collection",
+          "settings": {
+            "collection": "spotify-promotion",
+            "icon": "spotify"
+          }
+        },
+        "9f2b260e-dbc7-4c27-821f-bcd4483a7285": {
+          "type": "collection",
+          "settings": {
+            "collection": "amazon-prime-music-promotion",
+            "icon": "artist-logo"
+          }
+        },
+        "43523327-4f3a-438d-89cc-b2f6cf930c14": {
+          "type": "collection",
+          "settings": {
+            "collection": "deezer-promotion",
+            "icon": "deezer"
+          }
+        },
+        "057b3167-0251-4f3b-a8ae-0e860ffcdeed": {
+          "type": "collection",
+          "settings": {
+            "collection": "tidal-promotion",
+            "icon": "tidal"
+          }
+        },
+        "f52281ab-a173-4743-b6ad-5426cd983a26": {
+          "type": "collection",
+          "settings": {
+            "collection": "audiomack-promotion",
+            "icon": "artist-logo"
+          }
+        },
+        "943d97a3-9f72-4170-8287-1d7df8385620": {
+          "type": "collection",
+          "settings": {
+            "collection": "pandora-promotion",
+            "icon": "artist-logo"
+          }
+        },
+        "3bb5695e-311e-465d-add0-300b2fb4374a": {
+          "type": "collection",
+          "settings": {
+            "collection": "spotify-and-apple-music-playlists-placement",
+            "icon": "playlist"
+          }
+        }
+      },
+      "block_order": [
+        "cb3c963c-df68-4947-b4f9-bd0087b57ce9",
+        "9f2b260e-dbc7-4c27-821f-bcd4483a7285",
+        "43523327-4f3a-438d-89cc-b2f6cf930c14",
+        "057b3167-0251-4f3b-a8ae-0e860ffcdeed",
+        "f52281ab-a173-4743-b6ad-5426cd983a26",
+        "943d97a3-9f72-4170-8287-1d7df8385620",
+        "3bb5695e-311e-465d-add0-300b2fb4374a"
+      ],
+      "settings": {
+        "section-title": "Streaming promotion",
+        "desc": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience. <\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
