@@ -2,13 +2,9 @@
   "sections": {
     "main": {
       "type": "page-template"
-    },
-    "content": {
-      "type": "feature-products-subsection"
     }
   },
   "order": [
-    "main",
-    "content"
+    "main"
   ]
 }

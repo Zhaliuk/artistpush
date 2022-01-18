@@ -2,13 +2,9 @@
   "sections": {
     "main": {
       "type": "page-contact"
-    },
-    "content": {
-      "type": "feature-products-subsection"
     }
   },
   "order": [
-    "main",
-    "content"
+    "main"
   ]
 }
