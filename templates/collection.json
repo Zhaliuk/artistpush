@@ -1,10 +1,20 @@
 {
   "sections": {
     "main": {
-      "type": "collection-template"
+      "type": "collection-template",
+      "settings": {
+        "product_tags_enable": true,
+        "product_sorting_enable": true,
+        "blog": "<p>The music landscape has undergone some huge changes in the past decade or two. That trend shows no sign of letting up; in fact, it appears as though things are changing exponentially over time.<\/p><p>Artist Push offers a music blog that is intended to keep you in the loop in terms of what the most up-to-date strategies are for getting your music out to the world, building an audience, and so much more.<\/p><p>Whether you are an independent artist, a manager of musicians, a music label, whatever the case may be, you are going to want to keep an eye on this blog.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p><p>Artist Push examines trends in music streaming in real-time and offers effective strategies that allow you to capitalize on what is new in the music industry.<\/p><p>With the rapidly changing landscape of the music industry, it can be hard to determine what the best way to promote music is. The truth is, the answer to that question is something that can change over time just as rapidly. That’s what helps reinforce the practicality of a blog. You’ll be able to see articles reflecting the current environment.<\/p><p>One of the most useful assets available is the comprehensive hip-hop blog. This is going to give you the type of information you want to know if your goal is to build a hip-hop audience.<\/p>"
+      }
     },
     "content": {
-      "type": "faq-section_collection"
+      "type": "faq-section_collection",
+      "settings": {
+        "enable_faq": false,
+        "title": "How to get playlist placement",
+        "hide_faq": true
+      }
     }
   },
   "order": [
