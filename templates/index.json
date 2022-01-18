@@ -108,9 +108,9 @@
     "featured-collections": {
       "type": "featured-collections",
       "settings": {
-        "section-title": "",
+        "section-title": "Streaming promotion",
         "va-text": "View All",
-        "va-url": ""
+        "va-url": "shopify:\/\/pages\/music-streaming"
       }
     },
     "social-promotion": {
