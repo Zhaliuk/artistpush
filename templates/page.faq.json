@@ -128,9 +128,16 @@
         "title_second": "MUSIC PROMOTION SERVICES: GROW YOUR AUDIENCE",
         "title_third": "HOW TO PROMOTE YOUR MUSIC WITH PLAYLIST PLACEMENT"
       }
+    },
+    "1642500712b2d8edbb": {
+      "type": "featured-products-subsection",
+      "settings": {
+        "collection": "featured-products"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1642500712b2d8edbb"
   ]
 }
