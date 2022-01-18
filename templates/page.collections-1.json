@@ -1,11 +1,123 @@
-
 {
-"sections": {
-"main": {
-"type": "section-collections-1"
-}
-},
-"order": [
-"main"
-]
+  "sections": {
+    "main": {
+      "type": "section-collections-1",
+      "blocks": {
+        "cf57c629-f5a8-4275-afc0-becee7587a72": {
+          "type": "product",
+          "settings": {
+            "products": "1-hip-hop-blog-post"
+          }
+        },
+        "46299ac6-9086-4f41-998e-88fe386860ab": {
+          "type": "product",
+          "settings": {
+            "products": "1-million-spotify-plays"
+          }
+        },
+        "d9ce18f5-1376-4eba-8c3c-a8a1e1bf04fe": {
+          "type": "product",
+          "settings": {
+            "products": "1k-apple-music-plays"
+          }
+        },
+        "ea5b272e-b7b1-45c2-b414-8a681a5a0abf": {
+          "type": "product",
+          "settings": {
+            "products": "buy-amazon-music-plays"
+          }
+        },
+        "444c3009-f632-443c-99b9-34e4fa012b58": {
+          "type": "product",
+          "settings": {
+            "products": "buy-targeted-youtube-views"
+          }
+        },
+        "74e82e73-3c24-47ac-aeba-cc45b031eb86": {
+          "type": "product",
+          "settings": {
+            "products": "apple-music-hip-hop-playlist"
+          }
+        },
+        "41f6517b-0458-47cd-a52a-9e80c11345a7": {
+          "type": "product",
+          "settings": {
+            "products": "add-track-hip-hop-rap-rnb-spotify-playlist"
+          }
+        },
+        "62ea79d4-b6ee-4a21-a4be-30db115d8279": {
+          "type": "product",
+          "settings": {
+            "products": "one-million-soundcloud-plays"
+          }
+        },
+        "bd8b2b9a-a4d2-490f-bf16-e5bf57401e6b": {
+          "type": "product",
+          "settings": {
+            "products": "basic-release-push"
+          }
+        },
+        "4ef633b3-587b-4964-ad5f-6a8c62e6b647": {
+          "type": "product",
+          "settings": {
+            "products": "buy-amazon-music-plays"
+          }
+        },
+        "0acea42d-897e-4304-bd82-4406434d05b6": {
+          "type": "product",
+          "settings": {
+            "products": "buy-deezer-plays"
+          }
+        },
+        "bd525920-2a75-4263-a5ad-dee12e872137": {
+          "type": "product",
+          "settings": {
+            "products": "1k-tidal-plays"
+          }
+        },
+        "d2be6fa8-feab-4104-ab14-67e63ba08f31": {
+          "type": "product",
+          "settings": {
+            "products": "1-amazon-music-playlist"
+          }
+        },
+        "ee782860-aadb-426d-9c14-42327136c423": {
+          "type": "product",
+          "settings": {
+            "products": "add-track-to-10-spotify-playlists-stays-4-months"
+          }
+        },
+        "4635a193-6270-4b42-8543-00d095094d55": {
+          "type": "product",
+          "settings": {
+            "products": "buy-apple-music-plays"
+          }
+        }
+      },
+      "block_order": [
+        "cf57c629-f5a8-4275-afc0-becee7587a72",
+        "46299ac6-9086-4f41-998e-88fe386860ab",
+        "d9ce18f5-1376-4eba-8c3c-a8a1e1bf04fe",
+        "ea5b272e-b7b1-45c2-b414-8a681a5a0abf",
+        "444c3009-f632-443c-99b9-34e4fa012b58",
+        "74e82e73-3c24-47ac-aeba-cc45b031eb86",
+        "41f6517b-0458-47cd-a52a-9e80c11345a7",
+        "62ea79d4-b6ee-4a21-a4be-30db115d8279",
+        "bd8b2b9a-a4d2-490f-bf16-e5bf57401e6b",
+        "4ef633b3-587b-4964-ad5f-6a8c62e6b647",
+        "0acea42d-897e-4304-bd82-4406434d05b6",
+        "bd525920-2a75-4263-a5ad-dee12e872137",
+        "d2be6fa8-feab-4104-ab14-67e63ba08f31",
+        "ee782860-aadb-426d-9c14-42327136c423",
+        "4635a193-6270-4b42-8543-00d095094d55"
+      ],
+      "settings": {
+        "section-title": "Popular",
+        "desc": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience. <\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels. <\/p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
