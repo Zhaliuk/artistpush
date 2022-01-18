@@ -53,10 +53,56 @@
     },
     "popular-products": {
       "type": "popular-products",
+      "blocks": {
+        "134cbb94-bb0c-4625-9e2a-e791a647521a": {
+          "type": "product",
+          "settings": {
+            "products": "1k-real-tiktok-followers"
+          }
+        },
+        "2b36c8ae-baad-443a-ba05-302b1946a9c2": {
+          "type": "product",
+          "settings": {
+            "products": "get-real-instagram-followers"
+          }
+        },
+        "66245381-a40b-49dd-88ad-e230355a1d8a": {
+          "type": "product",
+          "settings": {
+            "products": "organic-soundcloud-promo"
+          }
+        },
+        "c5d6b605-ce7e-4b38-b56c-e07ac9c867de": {
+          "type": "product",
+          "settings": {
+            "products": "add-track-hip-hop-rap-rnb-spotify-playlist"
+          }
+        },
+        "1310a352-f9e3-4f3e-a706-43ae45ebe8fa": {
+          "type": "product",
+          "settings": {
+            "products": "1-hip-hop-blog-post"
+          }
+        },
+        "1f6d34af-1a32-4332-bf10-aacfc12d577f": {
+          "type": "product",
+          "settings": {
+            "products": "1k-youtube-views"
+          }
+        }
+      },
+      "block_order": [
+        "134cbb94-bb0c-4625-9e2a-e791a647521a",
+        "2b36c8ae-baad-443a-ba05-302b1946a9c2",
+        "66245381-a40b-49dd-88ad-e230355a1d8a",
+        "c5d6b605-ce7e-4b38-b56c-e07ac9c867de",
+        "1310a352-f9e3-4f3e-a706-43ae45ebe8fa",
+        "1f6d34af-1a32-4332-bf10-aacfc12d577f"
+      ],
       "settings": {
-        "section-title": "",
+        "section-title": "Popular",
         "va-text": "View All",
-        "va-url": ""
+        "va-url": "shopify:\/\/pages\/popular"
       }
     },
     "featured-collections": {
