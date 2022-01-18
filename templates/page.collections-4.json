@@ -1,7 +1,63 @@
 {
   "sections": {
     "main": {
-      "type": "section-collections-4"
+      "type": "section-collections-4",
+      "blocks": {
+        "586beb45-336a-4edd-967d-08556625c8ad": {
+          "type": "collection",
+          "settings": {
+            "collection": "artist-push",
+            "icon": "promo"
+          }
+        },
+        "487d9113-edc9-46eb-9e89-a504b083bcf2": {
+          "type": "collection",
+          "settings": {
+            "collection": "release-push",
+            "icon": "release"
+          }
+        },
+        "8e74339e-73e6-4a16-bef3-d9025cdb5149": {
+          "type": "collection",
+          "settings": {
+            "collection": "networks-push",
+            "icon": "smm"
+          }
+        },
+        "099ed04e-9fd3-4831-92db-f84f2af5647a": {
+          "type": "collection",
+          "settings": {
+            "collection": "hip-hop-promotion",
+            "icon": "hiphop"
+          }
+        },
+        "f095fc45-5d28-4a3e-8b74-af49acc083c5": {
+          "type": "collection",
+          "settings": {
+            "collection": "music-blogs-submission",
+            "icon": "music-blogs"
+          }
+        },
+        "d38fa591-a292-443a-a97a-225e9aeb59e9": {
+          "type": "collection",
+          "settings": {
+            "collection": "resident-advisor-promotion",
+            "icon": "resident"
+          }
+        }
+      },
+      "block_order": [
+        "586beb45-336a-4edd-967d-08556625c8ad",
+        "487d9113-edc9-46eb-9e89-a504b083bcf2",
+        "8e74339e-73e6-4a16-bef3-d9025cdb5149",
+        "099ed04e-9fd3-4831-92db-f84f2af5647a",
+        "f095fc45-5d28-4a3e-8b74-af49acc083c5",
+        "d38fa591-a292-443a-a97a-225e9aeb59e9"
+      ],
+      "settings": {
+        "section-title": "Personal promotion for artists",
+        "desc": "<p>Get <strong>monthly music promo packs<\/strong>. Save your time & money. As our name says, push stands for a low kick into your digital presence. In today's music industry art is not \"the thing\" for success. It's all about promoting. With our perfected scent for marketing, and the fact we deliver only real followers to your profiles, and streams, the momentum of viral spread and boost to your digital marketing campaigns is tremendous.<\/p>"
+      }
     }
   },
   "order": [
