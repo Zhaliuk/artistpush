@@ -37,6 +37,13 @@
             "collection": "soundcloud-promotion",
             "icon": "sound-cloud"
           }
+        },
+        "8d830923-bd57-4b4b-b716-2e3fcaa54979": {
+          "type": "collection",
+          "settings": {
+            "collection": "mixcloud-promotion",
+            "icon": "mixcloud"
+          }
         }
       },
       "block_order": [
@@ -44,7 +51,8 @@
         "94458cf3-6e6a-4cac-af0b-0bd00cde40d1",
         "52cfc718-1934-4583-b970-d2c837e04b73",
         "daef5138-1cb5-4be6-93e3-93af58f84d1e",
-        "e0b43dec-da35-4d05-9bf0-591fb0720bb8"
+        "e0b43dec-da35-4d05-9bf0-591fb0720bb8",
+        "8d830923-bd57-4b4b-b716-2e3fcaa54979"
       ],
       "settings": {
         "section-title": "Social promotion",
