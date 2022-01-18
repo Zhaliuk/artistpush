@@ -167,10 +167,62 @@
     },
     "social-promotion": {
       "type": "social-promotion",
+      "blocks": {
+        "0dab8ef7-9340-4cbf-82c4-fecac88fe347": {
+          "type": "collection",
+          "settings": {
+            "collection": "facebook-promotion",
+            "icon": "facebook"
+          }
+        },
+        "d0afa073-42ac-40d6-8a13-0360af1d3b46": {
+          "type": "collection",
+          "settings": {
+            "collection": "instagram-promotion",
+            "icon": "instagram"
+          }
+        },
+        "bfa3a38b-f606-460d-a583-0e3027ffeaba": {
+          "type": "collection",
+          "settings": {
+            "collection": "tik-tok-promotion",
+            "icon": "tiktok"
+          }
+        },
+        "b1c634a3-2f69-431e-b153-4773fb7de4d7": {
+          "type": "collection",
+          "settings": {
+            "collection": "youtube-promotion",
+            "icon": "youtube"
+          }
+        },
+        "d8f1ff81-810f-4403-9f4c-c950b19add4b": {
+          "type": "collection",
+          "settings": {
+            "collection": "soundcloud-promotion",
+            "icon": "sound-cloud"
+          }
+        },
+        "4a117f8a-9647-4e78-8ae0-c10bd6c5dee9": {
+          "type": "collection",
+          "settings": {
+            "collection": "mixcloud-promotion",
+            "icon": "mixcloud"
+          }
+        }
+      },
+      "block_order": [
+        "0dab8ef7-9340-4cbf-82c4-fecac88fe347",
+        "d0afa073-42ac-40d6-8a13-0360af1d3b46",
+        "bfa3a38b-f606-460d-a583-0e3027ffeaba",
+        "b1c634a3-2f69-431e-b153-4773fb7de4d7",
+        "d8f1ff81-810f-4403-9f4c-c950b19add4b",
+        "4a117f8a-9647-4e78-8ae0-c10bd6c5dee9"
+      ],
       "settings": {
-        "section-title": "",
+        "section-title": "Social promotion",
         "va-text": "View All",
-        "va-url": ""
+        "va-url": "shopify:\/\/pages\/social-promotion"
       }
     },
     "personal-promotion": {
