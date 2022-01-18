@@ -74,6 +74,38 @@
             "desc": "<p>For music blog placement, we will need this information:<\/p><p>✔️ The artist bio<\/p><p>✔️ Track or video link for the blog post<\/p><p>✔️ High-resolution cover<\/p><p>✔️ High-quality picture for the blog post<\/p>",
             "chose_faq_block": "second"
           }
+        },
+        "513af293-c39f-47f9-9b73-9e5fb726ec1f": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>How much time does it take for the playlists to be updated, and how long does the song remain on the playlist?<\/strong><\/em><\/p>",
+            "desc": "<p>Our curators require around 1 to 2 days to update the playlists. Please stay in touch so that we keep you informed all the time. One playlist placement is for ten days. Thus the song will remain on the playlist for ten days. However, your song or track can be on the playlist for longer, depending on the quantity ordered. <\/p>",
+            "chose_faq_block": "third"
+          }
+        },
+        "d212b820-0206-422c-8d93-1169c3cde14c": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Will you send links to playlists after the completion of the campaign?<\/strong><\/em><\/p>",
+            "desc": "<p>Yes, we will send the links to playlists after we submit your music to playlists and the campaign has been completed. <\/p>",
+            "chose_faq_block": "third"
+          }
+        },
+        "efe1febe-d51f-404e-812f-34ce404db323": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Do you promote all genres?<\/strong><\/em><\/p>",
+            "desc": "<p>Yes, we promote all genres. We interact with different curators who work on various genres and continuously work on coming up with accurate and active playlists. We also do <a href=\"https:\/\/artistpush.me\/collections\/hip-hop-promotion\" title=\"hip hop promotion\">hip hop promotion<\/a>, placements in hip hop blogs, and comprehensive promo packs. We have specific genre-targeted playlists, and that is what makes us stand out. <\/p>",
+            "chose_faq_block": "third"
+          }
+        },
+        "a80153eb-200c-470a-bc6b-fc4598f6378a": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>What is the maximum amount for one transaction at your payment provider?<\/strong><\/em><\/p>",
+            "desc": "<p>Our payment system is not allowing to pay <em>more than 500$<\/em> as one transaction, unfortunately. So we have to tell you that if you want to purchase an order for more than 500$ please, contact us via mail, and we will absolutely help you to pay your order with multiple transactions. This kind of technical feature is related to our payment system's rule. It is not allowed to get more than 500$ in a one-time payment. We apologize for such an inconvenience. We are working to improve our system, and the checkout process was more accessible and more uncomplicated. Thank you so much for your understanding.<\/p>",
+            "chose_faq_block": "third"
+          }
         }
       },
       "block_order": [
@@ -85,7 +117,11 @@
         "b99a4cbd-3493-4024-af1d-4e86b67f7e99",
         "26bad15c-49d9-45e4-979c-1c8404f2b671",
         "fb8691eb-0614-4240-a9cc-932a03097b12",
-        "0cc446c7-aabf-4c22-9a82-8a20d2e4f8b1"
+        "0cc446c7-aabf-4c22-9a82-8a20d2e4f8b1",
+        "513af293-c39f-47f9-9b73-9e5fb726ec1f",
+        "d212b820-0206-422c-8d93-1169c3cde14c",
+        "efe1febe-d51f-404e-812f-34ce404db323",
+        "a80153eb-200c-470a-bc6b-fc4598f6378a"
       ],
       "settings": {
         "title_first": "YOUR MUSIC PROMOTION GUIDE",
