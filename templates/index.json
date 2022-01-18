@@ -342,17 +342,54 @@
     },
     "page-faq": {
       "type": "page-faq",
+      "disabled": true,
       "settings": {
         "title_first": "",
         "title_second": "",
         "title_third": ""
       }
     },
+    "16424979362c760fb6": {
+      "type": "faq-section",
+      "blocks": {
+        "d35b4ffd-68af-4c52-8baa-5a7f13234f49": {
+          "type": "faq",
+          "settings": {
+            "title": "<p>What is the SoundCloud premier?<\/p>",
+            "desc": "<p>SoundCloud launched the Premier program, which assists each artist in promoting their music to new fans on SoundCloud and sends it to every primary music service and wherever directly from Soundcloud account; it gets paid for generated plays instead of organic promotion. This revenue platform is designed to help the fans support artists and empower music consumers.<\/p>"
+          }
+        },
+        "f20412b5-952f-488c-bceb-c6118bda6a08": {
+          "type": "faq",
+          "settings": {
+            "title": "<p>How to get SoundCloud premier?<\/p>",
+            "desc": "<p>If you want to get SoundCloud premier, you should be a creator with all the rights to your music and should produce your original content. You must own 100% of the rights (publishing, master, distribution). And in the past month, you should better have at least 5,000 works. This program will be limited to countries that offer SoundCloud Pro SoundCloud ads and advertisements.<\/p>"
+          }
+        },
+        "43387fa0-4a3e-42d6-8cdf-1e751e338303": {
+          "type": "faq",
+          "settings": {
+            "title": "<p>Question-3<\/p>",
+            "desc": "<p>Answer<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "d35b4ffd-68af-4c52-8baa-5a7f13234f49",
+        "f20412b5-952f-488c-bceb-c6118bda6a08",
+        "43387fa0-4a3e-42d6-8cdf-1e751e338303"
+      ],
+      "settings": {
+        "enable_faq": true,
+        "title": "FAQ",
+        "hide_faq": true
+      }
+    },
     "readmore-text": {
       "type": "readmore-text",
       "settings": {
         "read_more_title": "Read more",
-        "read_more_content": ""
+        "read_more_content": "<p>ARTIST PUSH: BEST MUSIC PROMOTION SERVICE FOR INDEPENDENT ARTISTS<\/p>"
       }
     }
   },
@@ -366,6 +403,7 @@
     "reviews",
     "featured-blog",
     "page-faq",
+    "16424979362c760fb6",
     "readmore-text"
   ]
 }
