@@ -1,0 +1,47 @@
+{
+  "name": "Home Page",
+  "sections": {
+    "main": {
+      "type": "banner"
+    },
+    "ticker": {
+      "type": "ticker"
+    },
+    "popular-products": {
+      "type": "popular-products"
+    },
+    "featured-collections": {
+      "type": "featured-collections"
+    },
+    "social-promotion": {
+      "type": "social-promotion"
+    },
+    "personal-promotion": {
+      "type": "personal-promotion"
+    },
+    "reviews": {
+      "type": "reviews"
+    },
+    "featured-blog": {
+      "type": "featured-blog"
+    },
+    "page-faq": {
+      "type": "page-faq"
+    },
+    "readmore-text": {
+      "type": "readmore-text"
+    }
+  },
+  "order": [
+    "main",
+    "ticker",
+    "popular-products",
+    "featured-collections",
+    "social-promotion",
+    "personal-promotion",
+    "reviews",
+    "featured-blog",
+    "page-faq",
+    "readmore-text"
+  ]
+}
