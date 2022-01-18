@@ -107,6 +107,18 @@
     },
     "featured-collections": {
       "type": "featured-collections",
+      "blocks": {
+        "01692802-873a-4721-85e9-cdb292d40e25": {
+          "type": "collection",
+          "settings": {
+            "collection": "spotify-promotion",
+            "icon": "spotify"
+          }
+        }
+      },
+      "block_order": [
+        "01692802-873a-4721-85e9-cdb292d40e25"
+      ],
       "settings": {
         "section-title": "Streaming promotion",
         "va-text": "View All",
