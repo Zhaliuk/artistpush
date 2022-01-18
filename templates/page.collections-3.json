@@ -1,10 +1,58 @@
 {
-"sections": {
-"main": {
-"type": "section-collections-3"
-}
-},
-"order": [
-"main"
-]
+  "sections": {
+    "main": {
+      "type": "section-collections-3",
+      "blocks": {
+        "181fa78d-7ff7-4727-ac76-84f8533a4fc0": {
+          "type": "collection",
+          "settings": {
+            "collection": "facebook-promotion",
+            "icon": "facebook"
+          }
+        },
+        "94458cf3-6e6a-4cac-af0b-0bd00cde40d1": {
+          "type": "collection",
+          "settings": {
+            "collection": "instagram-promotion",
+            "icon": "instagram"
+          }
+        },
+        "52cfc718-1934-4583-b970-d2c837e04b73": {
+          "type": "collection",
+          "settings": {
+            "collection": "tik-tok-promotion",
+            "icon": "tiktok"
+          }
+        },
+        "daef5138-1cb5-4be6-93e3-93af58f84d1e": {
+          "type": "collection",
+          "settings": {
+            "collection": "youtube-promotion",
+            "icon": "youtube"
+          }
+        },
+        "e0b43dec-da35-4d05-9bf0-591fb0720bb8": {
+          "type": "collection",
+          "settings": {
+            "collection": "soundcloud-promotion",
+            "icon": "sound-cloud"
+          }
+        }
+      },
+      "block_order": [
+        "181fa78d-7ff7-4727-ac76-84f8533a4fc0",
+        "94458cf3-6e6a-4cac-af0b-0bd00cde40d1",
+        "52cfc718-1934-4583-b970-d2c837e04b73",
+        "daef5138-1cb5-4be6-93e3-93af58f84d1e",
+        "e0b43dec-da35-4d05-9bf0-591fb0720bb8"
+      ],
+      "settings": {
+        "section-title": "Social promotion",
+        "desc": "<p>At Network Push, everything is easy and straightforward; that's why our customers love us all over the world. The Network Push formula is the \"set it once and forget entirely about social promotion\" because you are covered for the month. You only need to budget, choose the network that's most suitable for your music business, and set it on autopilot. We at Network Push will do all the legwork for you from then on till you subscribe again.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
