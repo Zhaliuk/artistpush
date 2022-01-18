@@ -1,10 +1,19 @@
 {
   "sections": {
     "main": {
-      "type": "page-contact"
+      "type": "page-contact",
+      "settings": {
+      }
+    },
+    "16425025177aba0dfb": {
+      "type": "featured-products-subsection",
+      "settings": {
+        "collection": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16425025177aba0dfb"
   ]
 }
