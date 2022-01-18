@@ -60,7 +60,8 @@
     "sections": {
       "slideshow": {
         "type": "slideshow",
-        "settings": {}
+        "settings": {
+        }
       },
       "footer": {
         "type": "footer",
@@ -311,7 +312,8 @@
           "1599807260308",
           "1599807262588"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "1599819890932": {
         "type": "personal-promotion",
@@ -1063,46 +1065,54 @@
           "blocks": {
             "placeholder": {
               "type": "slide",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "placeholder"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "footer": {
           "type": "footer",
           "blocks": {
             "linklist": {
               "type": "menu",
-              "settings": {}
+              "settings": {
+              }
             },
             "social": {
               "type": "social",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "linklist",
             "social"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-collections": {
           "type": "featured-collections",
           "blocks": {
             "featured-collections-0": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-1": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             },
             "featured-collections-2": {
               "type": "collection",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
@@ -1110,7 +1120,8 @@
             "featured-collections-1",
             "featured-collections-2"
           ],
-          "settings": {}
+          "settings": {
+          }
         },
         "featured-products": {
           "type": "featured-products",
@@ -1123,18 +1134,21 @@
           "blocks": {
             "image-content-0": {
               "type": "image_block",
-              "settings": {}
+              "settings": {
+              }
             },
             "image-content-1": {
               "type": "text_block",
-              "settings": {}
+              "settings": {
+              }
             }
           },
           "block_order": [
             "image-content-0",
             "image-content-1"
           ],
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "content_for_index": [

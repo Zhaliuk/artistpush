@@ -1,35 +1,77 @@
 {
-  "name": "Home Page",
   "sections": {
     "main": {
-      "type": "banner"
+      "type": "banner",
+      "settings": {
+        "banner-title": "Make music",
+        "banner-subtitle": "Forget promotion"
+      }
     },
     "ticker": {
-      "type": "ticker"
+      "type": "ticker",
+      "settings": {
+      }
     },
     "popular-products": {
-      "type": "popular-products"
+      "type": "popular-products",
+      "settings": {
+        "section-title": "",
+        "va-text": "View All",
+        "va-url": ""
+      }
     },
     "featured-collections": {
-      "type": "featured-collections"
+      "type": "featured-collections",
+      "settings": {
+        "section-title": "",
+        "va-text": "View All",
+        "va-url": ""
+      }
     },
     "social-promotion": {
-      "type": "social-promotion"
+      "type": "social-promotion",
+      "settings": {
+        "section-title": "",
+        "va-text": "View All",
+        "va-url": ""
+      }
     },
     "personal-promotion": {
-      "type": "personal-promotion"
+      "type": "personal-promotion",
+      "settings": {
+        "section-title": "",
+        "va-text": "View All",
+        "va-url": ""
+      }
     },
     "reviews": {
-      "type": "reviews"
+      "type": "reviews",
+      "settings": {
+        "section-title": ""
+      }
     },
     "featured-blog": {
-      "type": "featured-blog"
+      "type": "featured-blog",
+      "settings": {
+        "section-title": "",
+        "section-description": "",
+        "blog": ""
+      }
     },
     "page-faq": {
-      "type": "page-faq"
+      "type": "page-faq",
+      "settings": {
+        "title_first": "",
+        "title_second": "",
+        "title_third": ""
+      }
     },
     "readmore-text": {
-      "type": "readmore-text"
+      "type": "readmore-text",
+      "settings": {
+        "read_more_title": "Read more",
+        "read_more_content": ""
+      }
     }
   },
   "order": [
