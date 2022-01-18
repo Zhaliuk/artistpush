@@ -1,11 +1,100 @@
 {
   "sections": {
     "main": {
-      "type": "page-faq"
+      "type": "page-faq",
+      "blocks": {
+        "4198ef88-6bdc-4bab-a5c0-3a46785d8182": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>How does it work?<\/strong><\/em><\/p>",
+            "desc": "<p>After you've placed an order on our website, your data will be added to our database, and the delivery will take place within 1-2 days. However, the delivery length also depends on the package you have chosen for your music promotion. We never ask for your personal information, such as your music streaming accounts' passwords, but please make sure to put the links for which you want a promotion. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "86d8d45b-64fa-406d-9343-44308c3e5b36": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Do you offer deals and packages?<\/strong><\/em><\/p>",
+            "desc": "<p>We do offer deals for clients who are willing to buy bulk packages. We have different types of packages for various types of releases such as singles, EP, or multi-single. With our package, you'll have the <strong>best way to get music on <\/strong>any music streaming platform like <a href=\"https:\/\/artistpush.me\/collections\/spotify-promotion\" title=\"spotify promotion\">Spotify<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/streaming-promotion\" title=\"Apple Music promotion\">Apple Music<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/deezer-promotion\" title=\"Deezer promotion\">Deezer<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/tidal-promotion\" title=\"Tidal promotion\">Tidal<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/amazon-prime-music-promotion\" title=\"Amazon Music \">Amazon Music<\/a> and others. You also get more services when you reach a higher level as a buyer. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "5ca545b8-22ea-46d5-90a8-a06195275329": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>How do I submit links?<\/strong><\/em><\/p>",
+            "desc": "<p> When you fill the form for order placement, you'll come across a section that requires you to fill the links. However, if you're still confused, you can send the links to our email id <strong>artistpushnet@gmail.com<\/strong> along with your order number. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "cc0d52ff-ac32-4c53-ac05-bf3fc160c8bd": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>When and what should I expect from the services?<\/strong><\/em><\/p>",
+            "desc": "<p> When you place an order on our website, a small portion of the funds is allocated for the promotion campaign. When you place an order, your promotion campaign's processing has started, but it isn't published yet. During the process, our team evaluates your music and makes decisions on the type of audience your music will attract. <\/p><p>When the process is completed, and the preparations are done for your music campaign, we display the results within a week according to the number of services you have placed the order for. We don't wind up the campaign processing quickly because the results won't be up to the mark if we do so. The preparations for the campaign make sure that you get the best results. We always look forward to working in a professional and organized manner that leads to our clients' music careers' growth and success. <\/p><p>It takes around 1 to 3 days for the orders to start, and the process involves pitching your music track, gaining placements, and communicating with the curators. 1 to 3 days is just an estimate, and sometimes this duration may vary according to the order placed. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "16533cde-ae44-4c07-8d6b-afe60d14f2fc": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Can I get a refund if I'm not satisfied with the services?<\/strong><\/em><\/p>",
+            "desc": "<p> Our customers' satisfaction matters the most, and we always make sure that our customers are happy and content. If you don't receive the service or desired results, you will get a refund, or we can also switch you to another similar service of your choice. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "b99a4cbd-3493-4024-af1d-4e86b67f7e99": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Are there discounts available?<\/strong><\/em><\/p>",
+            "desc": "<p>There is a 10% discount available if your purchase reaches $150 or exceeds it. Apart from that, we make mailouts too every quarter, for which you'll be notified through the news. <a href=\"https:\/\/artistpush.me\/products\/personal-promotion\" title=\"personal promotion\">Personal promotion pack<\/a> is equipped with in-depth analysis of our account and free consultation too. <\/p>",
+            "chose_faq_block": "first"
+          }
+        },
+        "26bad15c-49d9-45e4-979c-1c8404f2b671": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Do you provide real likes and promo services?<\/strong><\/em><\/p>",
+            "desc": "<p>Real users give the likes, and thus, they are real. We use a plethora of sources that comprise real listeners, including <a href=\"https:\/\/artistpush.me\/collections\/spotify-and-apple-music-playlists-placement\" title=\"Playlists placement\">playlist placement<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/music-blogs-submission\" title=\"music blogs\">music blogs placement<\/a>, <a href=\"https:\/\/artistpush.me\/collections\/networks-push\" title=\"socila media marketing\">social media marketing<\/a>, and mailout promotion. No matter what music streaming platform it is, we pitch to the play curators to boost the traffic and listeners to various social media platforms. <\/p><p>After thorough research and utilization of resources, we are able to detect and remove the artificial activities from the music streaming so that the services are 100% real and nothing is fake. Our services' reliability is critical, and we make sure that the streams are honest and the artists get the appreciation they deserve.<\/p>",
+            "chose_faq_block": "second"
+          }
+        },
+        "fb8691eb-0614-4240-a9cc-932a03097b12": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>Will the followers last forever?<\/strong><\/em><\/p>",
+            "desc": "<p>Mostly the followers which you get from our services will stick to your account, but we can't guarantee whether they'll last forever because it totally depends on the followers. <\/p><p>Some followers might un-follow you, and this is what we can't help. We do provide refills for followers within three months, so contact us if you see a drop. <\/p>",
+            "chose_faq_block": "second"
+          }
+        },
+        "0cc446c7-aabf-4c22-9a82-8a20d2e4f8b1": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><em><strong>What information is required for music blog placement?<\/strong><\/em><\/p>",
+            "desc": "<p>For music blog placement, we will need this information:<\/p><p>✔️ The artist bio<\/p><p>✔️ Track or video link for the blog post<\/p><p>✔️ High-resolution cover<\/p><p>✔️ High-quality picture for the blog post<\/p>",
+            "chose_faq_block": "second"
+          }
+        }
+      },
+      "block_order": [
+        "4198ef88-6bdc-4bab-a5c0-3a46785d8182",
+        "86d8d45b-64fa-406d-9343-44308c3e5b36",
+        "5ca545b8-22ea-46d5-90a8-a06195275329",
+        "cc0d52ff-ac32-4c53-ac05-bf3fc160c8bd",
+        "16533cde-ae44-4c07-8d6b-afe60d14f2fc",
+        "b99a4cbd-3493-4024-af1d-4e86b67f7e99",
+        "26bad15c-49d9-45e4-979c-1c8404f2b671",
+        "fb8691eb-0614-4240-a9cc-932a03097b12",
+        "0cc446c7-aabf-4c22-9a82-8a20d2e4f8b1"
+      ],
+      "settings": {
+        "title_first": "YOUR MUSIC PROMOTION GUIDE",
+        "title_second": "MUSIC PROMOTION SERVICES: GROW YOUR AUDIENCE",
+        "title_third": "HOW TO PROMOTE YOUR MUSIC WITH PLAYLIST PLACEMENT"
+      }
     }
   },
   "order": [
     "main"
   ]
 }
-
