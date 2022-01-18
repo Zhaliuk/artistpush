@@ -227,14 +227,106 @@
     },
     "personal-promotion": {
       "type": "personal-promotion",
+      "blocks": {
+        "539a3c84-ae88-4b62-b156-76209d0430f2": {
+          "type": "product",
+          "settings": {
+            "collection": "artist-push",
+            "icon": "promo",
+            "subtitle": ""
+          }
+        },
+        "cd8ab685-eedb-467a-94c4-d2b23660ea83": {
+          "type": "product",
+          "settings": {
+            "collection": "release-push",
+            "icon": "release",
+            "subtitle": ""
+          }
+        },
+        "5696ebe0-e137-48e2-af55-ad6949f001b3": {
+          "type": "product",
+          "settings": {
+            "collection": "networks-push",
+            "icon": "smm",
+            "subtitle": ""
+          }
+        },
+        "27585bc2-d736-48a6-8cce-8b36e1282f15": {
+          "type": "product",
+          "settings": {
+            "collection": "hip-hop-promotion",
+            "icon": "hiphop",
+            "subtitle": ""
+          }
+        },
+        "36760267-b1ee-461c-b30f-4c5de67d6525": {
+          "type": "product",
+          "settings": {
+            "collection": "music-blogs-submission",
+            "icon": "music-blogs",
+            "subtitle": ""
+          }
+        },
+        "30357c91-68be-4860-84df-295be1b0bdeb": {
+          "type": "product",
+          "settings": {
+            "collection": "resident-advisor-promotion",
+            "icon": "resident",
+            "subtitle": ""
+          }
+        }
+      },
+      "block_order": [
+        "539a3c84-ae88-4b62-b156-76209d0430f2",
+        "cd8ab685-eedb-467a-94c4-d2b23660ea83",
+        "5696ebe0-e137-48e2-af55-ad6949f001b3",
+        "27585bc2-d736-48a6-8cce-8b36e1282f15",
+        "36760267-b1ee-461c-b30f-4c5de67d6525",
+        "30357c91-68be-4860-84df-295be1b0bdeb"
+      ],
       "settings": {
-        "section-title": "",
+        "section-title": "Personal promotion",
         "va-text": "View All",
-        "va-url": ""
+        "va-url": "shopify:\/\/pages\/personal-promotion"
       }
     },
     "reviews": {
       "type": "reviews",
+      "blocks": {
+        "d945f753-2a00-4d1e-8376-4bb61f950442": {
+          "type": "reviews",
+          "settings": {
+            "author": "Andrew Bowie",
+            "activity": "Sound producer",
+            "photo": "shopify:\/\/shop_images\/populyarnyy-popsoket-pop-socket-dlya-parnya-dart-veyder-56860954500598_small11.jpg",
+            "review": "Medias today create even fcking countries, imagine what they'll do with your music. Like overnight I saw myself giving interviews, participating podcasts and writing blogs about my music. Suddenly, I was everywhere. My music as well. Bengies you'll invest in music promotion will doom you to success. Thanks."
+          }
+        },
+        "49668c15-70ae-4c2a-ad9c-6a42dab62f87": {
+          "type": "reviews",
+          "settings": {
+            "author": "Alice Glass",
+            "activity": "DJ, sound producer",
+            "photo": "shopify:\/\/shop_images\/5d3a5c4f37f1cf5ec2d6cf1bc4d33227.jpg",
+            "review": "Invest that pays off! A blog posting is the best way to sell your material, music, even tickets for your live performance. I need to praise Artist Push for remarkable work."
+          }
+        },
+        "1532a747-a601-4156-b85c-c2c1a377ef68": {
+          "type": "reviews",
+          "settings": {
+            "author": "King Music",
+            "activity": "Label manager",
+            "photo": "shopify:\/\/shop_images\/79045d864599e6963d4f6150fb1bd304.jpg",
+            "review": "As a manager, I have tough everyday routine dealing with music platforms. Artist Push is nerves, energy, and time saver. And in my job time is everything."
+          }
+        }
+      },
+      "block_order": [
+        "d945f753-2a00-4d1e-8376-4bb61f950442",
+        "49668c15-70ae-4c2a-ad9c-6a42dab62f87",
+        "1532a747-a601-4156-b85c-c2c1a377ef68"
+      ],
       "settings": {
         "section-title": ""
       }
@@ -242,9 +334,10 @@
     "featured-blog": {
       "type": "featured-blog",
       "settings": {
-        "section-title": "",
-        "section-description": "",
-        "blog": ""
+        "section-title": "Our blog",
+        "section-description": "Steamy-hot music news and insider insights \nfrom the business end of the music grind.",
+        "image": "shopify:\/\/shop_images\/Untitled.png",
+        "blog": "news"
       }
     },
     "page-faq": {
