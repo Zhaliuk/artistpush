@@ -15,19 +15,10 @@
         "title": "How to get playlist placement",
         "hide_faq": false
       }
-    },
-    "1643294091cbed552e": {
-      "type": "banner",
-      "settings": {
-        "banner-title": "test banner",
-        "banner-subtitle": "test subtitle",
-        "image": "shopify:\/\/shop_images\/legs-running-on-track.jpg"
-      }
     }
   },
   "order": [
     "main",
-    "content",
-    "1643294091cbed552e"
+    "content"
   ]
 }
