@@ -13,12 +13,21 @@
       "settings": {
         "enable_faq": false,
         "title": "How to get playlist placement",
-        "hide_faq": true
+        "hide_faq": false
+      }
+    },
+    "1643294091cbed552e": {
+      "type": "banner",
+      "settings": {
+        "banner-title": "test banner",
+        "banner-subtitle": "test subtitle",
+        "image": "shopify:\/\/shop_images\/red-textured-wall.jpg"
       }
     }
   },
   "order": [
     "main",
-    "content"
+    "content",
+    "1643294091cbed552e"
   ]
 }
