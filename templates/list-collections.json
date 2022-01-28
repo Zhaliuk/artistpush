@@ -1,11 +1,13 @@
 {
   "sections": {
     "main": {
-      "type": "list-collections-template"
+      "type": "list-collections-template",
+      "settings": {
+        "cl-text": "<p>Effective streaming promotion services for your music. Order the placement in Premium Spotify and Apple Music playlists and get free streams for your tracks 24\/7. We help artists to get an access to popular streaming platforms playlists and expand their audience.<\/p><p>We consider specific genres and divide service into relevant playlists for gaining more traction for artists and labels.<\/p>"
+      }
     }
   },
   "order": [
     "main"
   ]
 }
-
