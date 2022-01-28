@@ -1,13 +1,25 @@
 {
-"sections": {
-  "main": {
-  "type": "product-template"
+  "sections": {
+    "main": {
+      "type": "product-template",
+      "settings": {
+        "enable_ajax": true,
+        "stock_enable": false,
+        "social_sharing_products": true,
+        "show_related_products": true,
+        "related_title": "Other fine products",
+        "related_grid_num": "2",
+        "related_grid_row": "1"
+      }
+    },
+    "bottom": {
+      "type": "product-bottom",
+      "settings": {
+      }
+    }
   },
-  "bottom": {
-    "type": "product-bottom"
-  }
-},
-"order": [
-"main", "bottom"
-]
+  "order": [
+    "main",
+    "bottom"
+  ]
 }
