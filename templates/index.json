@@ -54,12 +54,6 @@
     "popular-products": {
       "type": "popular-products",
       "blocks": {
-        "134cbb94-bb0c-4625-9e2a-e791a647521a": {
-          "type": "product",
-          "settings": {
-            "products": "how-to-push-your-track-on-billboard-top-100-chart"
-          }
-        },
         "2b36c8ae-baad-443a-ba05-302b1946a9c2": {
           "type": "product",
           "settings": {
@@ -70,6 +64,12 @@
           "type": "product",
           "settings": {
             "products": "organic-soundcloud-promo"
+          }
+        },
+        "134cbb94-bb0c-4625-9e2a-e791a647521a": {
+          "type": "product",
+          "settings": {
+            "products": "how-to-push-your-track-on-billboard-top-100-chart"
           }
         },
         "c5d6b605-ce7e-4b38-b56c-e07ac9c867de": {
@@ -92,9 +92,9 @@
         }
       },
       "block_order": [
-        "134cbb94-bb0c-4625-9e2a-e791a647521a",
         "2b36c8ae-baad-443a-ba05-302b1946a9c2",
         "66245381-a40b-49dd-88ad-e230355a1d8a",
+        "134cbb94-bb0c-4625-9e2a-e791a647521a",
         "c5d6b605-ce7e-4b38-b56c-e07ac9c867de",
         "1310a352-f9e3-4f3e-a706-43ae45ebe8fa",
         "1f6d34af-1a32-4332-bf10-aacfc12d577f"
