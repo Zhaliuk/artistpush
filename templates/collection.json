@@ -31,7 +31,7 @@
         "938c39dc-3a07-4fd8-ada4-55698823c6bb"
       ],
       "settings": {
-        "enable_faq": false,
+        "enable_faq": true,
         "title": "How to get playlist placement",
         "hide_faq": false
       }
