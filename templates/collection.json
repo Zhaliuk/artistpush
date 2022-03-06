@@ -10,26 +10,6 @@
     },
     "content": {
       "type": "faq-section_collection",
-      "blocks": {
-        "6d64328e-d8fb-4adc-9263-ef8913616fe4": {
-          "type": "faq",
-          "settings": {
-            "title": "<p><strong>How much is Promotion on Spotify? <\/strong><\/p>",
-            "desc": "<p><strong>Spotify ads<\/strong> can be as effective and robust as Facebook or Youtube ads; the only thing is to know how to use the ads in the right way. <strong>The price<\/strong> depends on several factors, such as the objective, targeting, range, etc. However, the average cost of an advertising campaign on Spotify is <strong>$250<\/strong>. <br\/><br\/>The price may vary depending on the targeted audience. You can play with different audiences and notice <em>how much the price <\/em>varies as an experiment. But, keep in mind that Spotify is more expensive than any other platform. <\/p>"
-          }
-        },
-        "938c39dc-3a07-4fd8-ada4-55698823c6bb": {
-          "type": "faq",
-          "settings": {
-            "title": "<p><strong>How Do I Increase My Listeners on Spotify? <\/strong><\/p>",
-            "desc": "<p>Spotify is at the vanguard of <em>streaming services<\/em>, with the music streaming market growing rapidly. Spotify provides musicians with the potential to enhance their careers by <strong>attracting millions of listeners<\/strong>.<br\/><br\/>You may use these techniques to increase your Spotify streams as a musician. One of the techniques is to submit your music to the playlist curators. They may include your music in their <em>favorite playlists<\/em>, and hence people start to stream it along with their favorite music. <br\/><br\/>Another important thing is also to build your image. Work on your social media platforms, collaborate with music blogs and try to make your name visible. People will start remembering your name and your art. <\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "6d64328e-d8fb-4adc-9263-ef8913616fe4",
-        "938c39dc-3a07-4fd8-ada4-55698823c6bb"
-      ],
       "settings": {
         "enable_faq": true,
         "title": "How to get playlist placement",
