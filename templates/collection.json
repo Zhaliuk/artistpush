@@ -24,11 +24,19 @@
             "title": "<p><strong>How Do I Advertise on Deezer?<\/strong><\/p>",
             "desc": "<p><strong>Sponsored editorial playlists<\/strong> have been established by Deezer Brand Solutions, the <em>ad-sales<\/em> arm of music streaming provider Deezer. It's a new ad platform for marketers that allows them to take over Deezer's editorial playlists in order to reach millions of free members.<br\/><br\/>Brands can choose whether to sponsor any of Deezer's popular, handpicked<strong> editorial playlists <\/strong>that are relevant to their business and target demographic. A prominent image of the firm will be shown over the header of the playlist, along with dedicated audio advertisements.<br\/><\/p>"
           }
+        },
+        "75f3997c-04f7-4942-b6a5-94b6971c8834": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><strong>How Do You Become an Artist on Deezer?<\/strong><\/p>",
+            "desc": "<p>The Deezer platform lets you become an artist with a couple of easy steps. Firstly you need to ask for access in the Deezer. Later in the menu bar you have to <strong>choose your role<\/strong>, whether you are an artist, label, manager, or provider. <br\/><br\/>After the above-mentioned steps, you need to enter the <em>UPC number.<\/em> Carefully read the term and conditions because you have to check the box and agree to it. The final step is to submit it and wait for the updates. <br\/><\/p>"
+          }
         }
       },
       "block_order": [
         "05dca063-bb2e-42c8-b56b-151dc7294892",
-        "d80ff8e5-cf43-4d1a-baea-25703ab54358"
+        "d80ff8e5-cf43-4d1a-baea-25703ab54358",
+        "75f3997c-04f7-4942-b6a5-94b6971c8834"
       ],
       "settings": {
         "enable_faq": true,
