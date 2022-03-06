@@ -10,6 +10,18 @@
     },
     "content": {
       "type": "faq-section_collection",
+      "blocks": {
+        "05dca063-bb2e-42c8-b56b-151dc7294892": {
+          "type": "faq",
+          "settings": {
+            "title": "<p><strong>How Do I Get More Streams on Deezer?<\/strong><\/p>",
+            "desc": "<p>You have a few alternatives when it comes to sending your music or tracks to <strong>Deezer Playlists<\/strong>. Blogs, advertisements, and recommendations are just a few examples. Any musician on Deezer should know at least a bit of promotion. <br\/><br\/>Promoting the artist page <strong>will drive traffic<\/strong> to it, and once you have followers there, likes, follows, and shares will expand naturally and, more importantly, quickly. After all of your accomplishments, you'll be able to finally <em>monetize<\/em> all of your hard work in the music industry.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "05dca063-bb2e-42c8-b56b-151dc7294892"
+      ],
       "settings": {
         "enable_faq": true,
         "title": "How to get playlist placement",
