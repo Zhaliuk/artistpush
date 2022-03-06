@@ -41,7 +41,7 @@
       "settings": {
         "enable_faq": true,
         "title": "How to get playlist placement",
-        "hide_faq": false
+        "hide_faq": true
       }
     }
   },
