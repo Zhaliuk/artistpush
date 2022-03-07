@@ -13,6 +13,7 @@
       "blocks": {
         "05dca063-bb2e-42c8-b56b-151dc7294892": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "<p>How much is Promotion on Spotify?<\/p>",
             "desc": "<p>Spotify ads can be as effective and robust as Facebook or Youtube ads; the only thing is to know how to use the ads in the right way. The price depends on several factors, such as the objective, targeting, range, etc. However, the average cost of an advertising campaign on Spotify is $250. <\/p><p>The price may vary depending on the targeted audience. You can play with different audiences and notice how much the price varies as an experiment. But, keep in mind that Spotify is more expensive than any other platform.<\/p>"
@@ -20,6 +21,7 @@
         },
         "d80ff8e5-cf43-4d1a-baea-25703ab54358": {
           "type": "faq",
+          "disabled": true,
           "settings": {
             "title": "<p>How Do I Increase My Listeners on Spotify?<\/p>",
             "desc": "<p>Spotify is at the vanguard of streaming services, with the music streaming market growing rapidly. Spotify provides musicians with the potential to enhance their careers by attracting millions of listeners.<\/p><p>You may use these techniques to increase your Spotify streams as a musician. One of the techniques is to submit your music to the playlist curators. They may include your music in their favorite playlists, and hence people start to stream it along with their favorite music. <\/p><p>Another important thing is also to build your image. Work on your social media platforms, collaborate with music blogs and try to make your name visible. People will start remembering your name and your art. <\/p>"
