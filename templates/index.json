@@ -9,6 +9,7 @@
     },
     "ticker": {
       "type": "ticker",
+      "disabled": true,
       "blocks": {
         "b963f51e-dca1-4e15-8a09-73d669eef6eb": {
           "type": "collection",
