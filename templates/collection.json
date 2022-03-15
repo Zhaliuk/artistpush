@@ -10,6 +10,7 @@
     },
     "content": {
       "type": "faq-section_collection",
+      "disabled": true,
       "blocks": {
         "05dca063-bb2e-42c8-b56b-151dc7294892": {
           "type": "faq",
